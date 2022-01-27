@@ -5,11 +5,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private BoxCollider2D boxCollider;
-
     private Vector3 moveDelta;
     private float moveSpeed = 1;
 
-    private RayCastHit2D hit;
+    private RaycastHit2D hit;
 
     private void Start()
     {
@@ -30,9 +29,10 @@ public class Player : MonoBehaviour
         else if (moveDelta.x > 0)
             transform.localScale = new Vector3(-1, 1, 1);
     
-        // hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, )
+        Debug.Log(x);
 
         // Now we are making it move
         transform.Translate(moveDelta * Time.deltaTime * moveSpeed);
+        
     }
 }
