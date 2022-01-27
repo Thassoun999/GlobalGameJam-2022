@@ -29,10 +29,20 @@ public class Player : MonoBehaviour
         else if (moveDelta.x > 0)
             transform.localScale = new Vector3(-1, 1, 1);
     
-        Debug.Log(x);
+        // Make sure we can move in this direction by casting a box there first, if the box returns null we are free to move
+        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
+        if (hit.collider == null)
+        {
+            // Now we are making it move
+            transform.Translate(0, moveDelta.y * Time.deltaTime * moveSpeed, 0);
+        }
 
-        // Now we are making it move
-        transform.Translate(moveDelta * Time.deltaTime * moveSpeed);
+        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(moveDelta.x, 0), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
+        if (hit.collider == null)
+        {
+            // Now we are making it move
+            transform.Translate(moveDelta.x * Time.deltaTime * moveSpeed, 0, 0);
+        }
         
     }
 }
