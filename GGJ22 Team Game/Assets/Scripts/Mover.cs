@@ -16,7 +16,7 @@ public abstract class Mover : Fighter
 
     private RaycastHit2D hit;
 
-    // random comment for no reason
+
     protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -33,20 +33,24 @@ public abstract class Mover : Fighter
         else if (moveDelta.x > 0)
             transform.localScale = new Vector3(-1, 1, 1);
 
-        if ((moveDelta.x != 0 || moveDelta.y != 0) && transform.name == "Player" && playerSfxTimeDelta > playerSfxWait)
+        // Trigger player footsteps if this is player movement
+        if(transform.name == "Player")
         {
-            playerSfxTimeDelta = playerSfxTimeDelta - playerSfxWait;
+            if ((moveDelta.x != 0 || moveDelta.y != 0) && playerSfxTimeDelta > playerSfxWait)
+            {
+                playerSfxTimeDelta = playerSfxTimeDelta - playerSfxWait;
 
-            AkSoundEngine.PostEvent("Play_Footsteps_Player", gameObject);
-        }
-        else if (playerSfxTimeDelta > playerSfxWait)
-        {
-            playerSfxTimeDelta = 0.0f;
-        }
-        else
-        {
+                AkSoundEngine.PostEvent("Play_Footsteps_Player", gameObject);
+            }
+            else if (playerSfxTimeDelta > playerSfxWait)
+            {
+                playerSfxTimeDelta = 0.0f;
+            }
+            else
+            {
 
-            playerSfxTimeDelta += Time.deltaTime;
+                playerSfxTimeDelta += Time.deltaTime;
+            }
         }
 
         // Add push vector, if any.
