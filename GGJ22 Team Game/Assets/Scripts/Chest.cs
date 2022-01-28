@@ -6,13 +6,13 @@ public class Chest : Collectable
 {
     public Sprite emptyChest;
     public int coinAmount = 10;
-    protected override void onCollect()
+    protected override void OnCollect()
     {
         if (!collected)
         {
             collected = true;
             GetComponent<SpriteRenderer>().sprite = emptyChest;
-            Debug.Log("Grant " + coinAmount + " coins!");
+            GameManager.instance.ShowText("+" + coinAmount + " coins!", 25, Color.yellow, transform.position, Vector3.up * 25, 0.5f);
         }
     }
 }

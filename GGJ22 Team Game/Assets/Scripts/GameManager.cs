@@ -30,12 +30,19 @@ public class GameManager : MonoBehaviour
     // References -> Can be the player, the weapon they have, potential upgrades, etc.
     public Player player;
     // public weapon weapon...
+    public FloatingTextManager floatingTextManager;
 
     // Logic that will be preserved in the save state
     public int numArtifacts;
     public int experience;
     public int areasUnlocked;
     public int charLevel;
+
+    // Call for floating text
+    public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
+    {
+        floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
+    }
 
     // Saving the game should happen before room-change and when we exit the game
     /*

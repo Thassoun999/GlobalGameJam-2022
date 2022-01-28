@@ -7,13 +7,13 @@ public class Collectable : Collidable
 {
     protected bool collected;
 
-    protected override void onCollide(Collider2D coll)
+    protected override void OnCollide(Collider2D coll)
     {
         if(coll.name == "Player")
-            onCollect();
+            OnCollect();
     }
 
-    protected virtual void onCollect()
+    protected virtual void OnCollect()
     {
         collected = true;
     }

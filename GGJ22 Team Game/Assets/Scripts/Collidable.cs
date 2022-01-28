@@ -24,14 +24,14 @@ public class Collidable : MonoBehaviour
             if(hits[i] == null)
                 continue;
 
-            onCollide(hits[i]);
+            OnCollide(hits[i]);
 
             // The array is not cleaned up every time so we have to go ahead and do it ourselves
             hits[i] = null;
         }
     }
 
-    protected virtual void onCollide(Collider2D coll)
+    protected virtual void OnCollide(Collider2D coll)
     {
         Debug.Log(coll.name);
     }
