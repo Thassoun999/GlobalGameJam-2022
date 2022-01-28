@@ -91,7 +91,8 @@ public class Weapon : Collidable
     private void SpecialSwing()
     {
         Debug.Log("Special Swing");
+        animController.SetTrigger("Special");
         Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-        //animController.SetTrigger("Special");
+        
     }
 }
