@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GGJ22\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GGJ22\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GGJ22\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GGJ22\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="196357682" Language="SFX" Hash="2496098729">
+			<ObjectPath>\SoundBanks\Default Work Unit\Footsteps_Player</ObjectPath>
+			<ShortName>Footsteps_Player</ShortName>
+			<Path>Footsteps_Player.bnk</Path>
+			<IncludedEvents>
+				<Event Id="196357682" Name="Footsteps_Player" ObjectPath="\Events\Default Work Unit\Footsteps_Player" DurationType="OneShot" DurationMin="0.125" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="372269785" Language="SFX">
+							<ShortName>footstep_hard_02.wav</ShortName>
+							<Path>SFX\footstep_hard_02_10C4C929.wem</Path>
+						</File>
+						<File Id="429527536" Language="SFX">
+							<ShortName>footstep_hard_03.wav</ShortName>
+							<Path>SFX\footstep_hard_03_10C4C929.wem</Path>
+						</File>
+						<File Id="504165508" Language="SFX">
+							<ShortName>footstep_hard_04.wav</ShortName>
+							<Path>SFX\footstep_hard_04_10C4C929.wem</Path>
+						</File>
+						<File Id="918212952" Language="SFX">
+							<ShortName>footstep_hard_01.wav</ShortName>
+							<Path>SFX\footstep_hard_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
