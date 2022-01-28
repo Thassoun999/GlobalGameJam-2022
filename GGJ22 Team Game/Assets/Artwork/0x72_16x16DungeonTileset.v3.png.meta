@@ -41,6 +41,9 @@ TextureImporter:
   - first:
       213: -839162874926276321
     second: enemy_0
+  - first:
+      213: -5368232363043395154
+    second: collider_top
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -402,7 +405,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -410,6 +413,27 @@ TextureImporter:
       bones: []
       spriteID: f11e253bfc1ba54f0800000000000000
       internalID: -839162874926276321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: collider_top
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 66
+        width: 16
+        height: 2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea9ea01ab153085b0800000000000000
+      internalID: -5368232363043395154
       vertices: []
       indices: 
       edges: []

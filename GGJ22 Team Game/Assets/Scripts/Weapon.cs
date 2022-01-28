@@ -18,10 +18,14 @@ public class Weapon : Collidable
     private float projectileCooldown = 6.0f; // Has reduced damage, no push force, piercing, and range
     private float lastProjectile;
 
+    // Animator Controller
+    private Animator animController; 
+
     protected override void Start()
     {
         base.Start();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animController = GetComponent<Animator>();
     }
 
     protected override void Update()
@@ -58,6 +62,6 @@ public class Weapon : Collidable
 
     private void Swing()
     {
-        Debug.Log("Swing");
+        animController.SetTrigger("Swing");
     }
 }
