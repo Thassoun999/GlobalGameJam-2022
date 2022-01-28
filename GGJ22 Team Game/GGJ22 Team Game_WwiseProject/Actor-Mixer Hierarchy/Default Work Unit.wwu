@@ -82,36 +82,6 @@
 								<ActiveSource Name="footstep_hard_02" ID="{573FDBB0-8193-434E-BF14-DF317F82E50D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="footstep_hard_03" ID="{0A6886C6-89B1-4F41-8A26-4D5819737BC5}" ShortID="877982892">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>280</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{51D3CB5E-0996-4650-B2E2-34CA91B823AB}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4C440105-4AE5-46BE-AD92-E914D0A91D13}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="footstep_hard_03" ID="{F5C13A2F-747D-4CFF-BD0E-46FB85478568}">
-									<Language>SFX</Language>
-									<AudioFile>footstep_hard_03.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="429527536"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="footstep_hard_03" ID="{F5C13A2F-747D-4CFF-BD0E-46FB85478568}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
 				</RandomSequenceContainer>

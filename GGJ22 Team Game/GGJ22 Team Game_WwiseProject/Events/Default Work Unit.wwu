@@ -3,7 +3,17 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{049DE65B-A6F1-4AA7-8826-D1899A5F8A8E}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Footsteps_Player" ID="{CACDB0AD-2E58-49DA-8968-48201EF43165}"/>
+				<Event Name="Footsteps_Player" ID="{CACDB0AD-2E58-49DA-8968-48201EF43165}">
+					<ChildrenList>
+						<Action Name="" ID="{962D222E-C8A1-45DD-89C8-AB44C59192EC}" ShortID="220837673">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_HardSurface_Player" ID="{90F87661-C4C1-4D62-A668-A14D1152B672}" WorkUnitID="{E97A3FDB-3465-4959-9E9E-CAE1C2AEF4B2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

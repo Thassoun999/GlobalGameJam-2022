@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     // track time to play step sound
     private Vector3 lastPos;
     private float moveTimer = 0.0f;
-    private float moveInterval = 0.16f;
+    private float moveInterval = 0.175f;
 
     private RaycastHit2D hit;
 

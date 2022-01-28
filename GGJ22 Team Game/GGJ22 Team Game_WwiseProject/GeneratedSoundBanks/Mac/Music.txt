@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Music\Music	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	319090826	music-loop-01-head	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GGJ22\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\music-loop-01-head_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Entry Theme\music-loop-01-head\music-loop-01-head		7680064
+	1026470693	music-loop-01-mainloop	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GGJ22\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\music-loop-01-mainloop_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Entry Theme\music-loop-01-mainloop\music-loop-01-mainloop		7680064
+
