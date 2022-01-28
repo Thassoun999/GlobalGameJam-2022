@@ -12,6 +12,7 @@ public abstract class Mover : Fighter
 
     private RaycastHit2D hit;
 
+    // random comment for no reason
     protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
