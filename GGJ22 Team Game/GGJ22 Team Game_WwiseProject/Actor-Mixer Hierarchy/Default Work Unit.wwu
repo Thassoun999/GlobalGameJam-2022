@@ -1,6 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{86B3B1B6-468C-4DBD-9DDF-CA67EFB1513E}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{86B3B1B6-468C-4DBD-9DDF-CA67EFB1513E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{86B3B1B6-468C-4DBD-9DDF-CA67EFB1513E}" PersistMode="Standalone">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Footsteps_Player" ID="{1F51A9B1-07D9-454A-A012-6A6828704B4F}" ShortID="198661852">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4184B28-7192-4F00-AE45-1361F83F88E5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA3494CD-AF98-4BBA-B58F-7F868659E896}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="footstep_hard_01" ID="{53DAF7DF-37B2-43FC-A760-AA8ADA4E2833}" ShortID="808146435">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4184B28-7192-4F00-AE45-1361F83F88E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA3494CD-AF98-4BBA-B58F-7F868659E896}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="footstep_hard_01" ID="{94B936DD-C082-4EE7-ACF5-8F9D555D5419}">
+									<Language>SFX</Language>
+									<AudioFile>footstep_hard_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="324952742"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="footstep_hard_01" ID="{94B936DD-C082-4EE7-ACF5-8F9D555D5419}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="footstep_hard_02" ID="{41025720-36C7-4ABD-A3D1-14B621AB7D62}" ShortID="360283765">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4184B28-7192-4F00-AE45-1361F83F88E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA3494CD-AF98-4BBA-B58F-7F868659E896}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="footstep_hard_02" ID="{C349A692-C912-4A7B-A98D-AE465D2A4CE8}">
+									<Language>SFX</Language>
+									<AudioFile>footstep_hard_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="136999459"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="footstep_hard_02" ID="{C349A692-C912-4A7B-A98D-AE465D2A4CE8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="footstep_hard_04" ID="{307F1FF4-6FCB-4C4A-BE66-3A05E2756FC5}" ShortID="749665459">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4184B28-7192-4F00-AE45-1361F83F88E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA3494CD-AF98-4BBA-B58F-7F868659E896}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="footstep_hard_04" ID="{FBB759AA-956D-425C-9C3F-AD9BA7408F54}">
+									<Language>SFX</Language>
+									<AudioFile>footstep_hard_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="89012016"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="footstep_hard_04" ID="{FBB759AA-956D-425C-9C3F-AD9BA7408F54}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

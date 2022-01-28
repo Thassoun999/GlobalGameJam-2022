@@ -14,12 +14,14 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID ENTRY_THEME = 2404684705U;
+        static const AkUniqueID PLAY_FOOTSTEPS_PLAYER = 3044539581U;
     } // namespace EVENTS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID PLAYERSFX = 4283257371U;
     } // namespace BANKS
 
     namespace BUSSES

@@ -35,5 +35,28 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
+		<SoundBank Id="4283257371" Language="SFX" Hash="2596163673">
+			<ObjectPath>\SoundBanks\Default Work Unit\PlayerSfx</ObjectPath>
+			<ShortName>PlayerSfx</ShortName>
+			<Path>PlayerSfx.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3044539581" Name="Play_Footsteps_Player" ObjectPath="\Events\Default Work Unit\Play_Footsteps_Player" DurationType="OneShot" DurationMin="0.125" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="89012016" Language="SFX">
+							<ShortName>footstep_hard_04.wav</ShortName>
+							<Path>SFX\footstep_hard_04_10C4C929.wem</Path>
+						</File>
+						<File Id="136999459" Language="SFX">
+							<ShortName>footstep_hard_02.wav</ShortName>
+							<Path>SFX\footstep_hard_02_10C4C929.wem</Path>
+						</File>
+						<File Id="324952742" Language="SFX">
+							<ShortName>footstep_hard_01.wav</ShortName>
+							<Path>SFX\footstep_hard_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

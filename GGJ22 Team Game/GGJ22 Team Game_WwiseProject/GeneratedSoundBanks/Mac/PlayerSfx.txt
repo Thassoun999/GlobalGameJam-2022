@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3044539581	Play_Footsteps_Player			\Default Work Unit\Play_Footsteps_Player	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	89012016	footstep_hard_04	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\footstep_hard_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Player\footstep_hard_04		24064
+	136999459	footstep_hard_02	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\footstep_hard_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Player\footstep_hard_02		24064
+	324952742	footstep_hard_01	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\footstep_hard_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Player\footstep_hard_01		96064
+

@@ -10,6 +10,10 @@ public abstract class Mover : Fighter
     protected float ySpeed = 0.75f;
     protected float xSpeed = 1.0f;
 
+    private float playerSfxTimeDelta;
+    private float playerSfxWait = 0.175f;
+    private bool playerIsMoving;
+
     private RaycastHit2D hit;
 
     // random comment for no reason
@@ -18,7 +22,7 @@ public abstract class Mover : Fighter
         boxCollider = GetComponent<BoxCollider2D>();
     }
 
-    protected virtual void UpdateMotor(Vector3 input) 
+    protected virtual void UpdateMotor(Vector3 input)
     {
         // Reset moveDelta -- Difference between current position and where I'm going to be
         moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
@@ -28,6 +32,22 @@ public abstract class Mover : Fighter
             transform.localScale = Vector3.one;
         else if (moveDelta.x > 0)
             transform.localScale = new Vector3(-1, 1, 1);
+
+        if ((moveDelta.x != 0 || moveDelta.y != 0) && transform.name == "Player" && playerSfxTimeDelta > playerSfxWait)
+        {
+            playerSfxTimeDelta = playerSfxTimeDelta - playerSfxWait;
+
+            AkSoundEngine.PostEvent("Play_Footsteps_Player", gameObject);
+        }
+        else if (playerSfxTimeDelta > playerSfxWait)
+        {
+            playerSfxTimeDelta = 0.0f;
+        }
+        else
+        {
+
+            playerSfxTimeDelta += Time.deltaTime;
+        }
 
         // Add push vector, if any.
         moveDelta += pushDirection;

@@ -14543,6 +14543,35 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1113354490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1684633112428568359, guid: e3e754ca0c00b304bad16e6f9f4f460f, type: 3}
+  m_PrefabInstance: {fileID: 1684633111981026295}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1113354491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113354490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9881dc75286609b40bb60c7b0abfa21c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d648fdbf603f6bc41aafd57cd5f5aa78, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &1196944934
 GameObject:
   m_ObjectHideFlags: 0
@@ -14919,7 +14948,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1684633112428568357, guid: e3e754ca0c00b304bad16e6f9f4f460f, type: 3}
   m_PrefabInstance: {fileID: 1684633111981026295}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1113354490}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 855ad363a27ca1a4d8259f9012603870, type: 3}
