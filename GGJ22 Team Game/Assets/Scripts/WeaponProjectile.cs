@@ -10,5 +10,5 @@ public class WeaponProjectile : Collidable
 
     // Weapon upgrade
     public int weaponLevel = 0;
-
+    // stuff
 }
