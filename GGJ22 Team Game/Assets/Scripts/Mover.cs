@@ -48,7 +48,6 @@ public abstract class Mover : Fighter
             }
             else
             {
-
                 playerSfxTimeDelta += Time.deltaTime;
             }
         }

@@ -22,6 +22,9 @@ public class Weapon : Collidable
     // Animator Controller
     private Animator animController; 
 
+    // Projectile Prefab
+    public Transform projectilePrefab;
+
     protected override void Start()
     {
         base.Start();
@@ -88,6 +91,7 @@ public class Weapon : Collidable
     private void SpecialSwing()
     {
         Debug.Log("Special Swing");
+        Instantiate(projectilePrefab, transform.position, Quaternion.identity);
         //animController.SetTrigger("Special");
     }
 }
