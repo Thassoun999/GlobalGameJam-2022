@@ -44,6 +44,12 @@ TextureImporter:
   - first:
       213: -5368232363043395154
     second: collider_top
+  - first:
+      213: 8593676909740621209
+    second: Doors
+  - first:
+      213: -4523314999963357628
+    second: Push_Pull_box
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -426,7 +432,7 @@ TextureImporter:
         width: 16
         height: 2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -434,6 +440,69 @@ TextureImporter:
       bones: []
       spriteID: ea9ea01ab153085b0800000000000000
       internalID: -5368232363043395154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Switch
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94402337588a2d350800000000000000
+      internalID: 6040075341374030921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doors
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99df09f3e9fd24770800000000000000
+      internalID: 8593676909740621209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push_Pull_box
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 82
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44eecfb19f4f931c0800000000000000
+      internalID: -4523314999963357628
       vertices: []
       indices: 
       edges: []

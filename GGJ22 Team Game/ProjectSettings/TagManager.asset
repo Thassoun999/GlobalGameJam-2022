@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fighter
+  - PuzzleCrate
   layers:
   - Default
   - TransparentFX
@@ -48,9 +49,6 @@ TagManager:
   - name: Actor
     uniqueID: 2208048851
     locked: 0
-  - name: Weapon
-    uniqueID: 1866142863
-    locked: 0
   - name: Design
     uniqueID: 3641175985
     locked: 0
@@ -59,4 +57,7 @@ TagManager:
     locked: 0
   - name: Interactable
     uniqueID: 3216454535
+    locked: 0
+  - name: Weapon
+    uniqueID: 1866142863
     locked: 0

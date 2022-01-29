@@ -27,11 +27,15 @@ public abstract class Mover : Fighter
         // Reset moveDelta -- Difference between current position and where I'm going to be
         moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
 
-        // Swap sprite direction, whether you're going left or right
-        if (moveDelta.x < 0)
-            transform.localScale = Vector3.one;
-        else if (moveDelta.x > 0)
-            transform.localScale = new Vector3(-1, 1, 1);
+        // Swap sprite direction, whether you're going left or right (IF NOT HOLDING A CRATE)
+        if (GameManager.instance.player.holdingCrate == false)
+        {
+            if (moveDelta.x < 0)
+                transform.localScale = Vector3.one;
+            else if (moveDelta.x > 0)
+                transform.localScale = new Vector3(-1, 1, 1);
+        }
+
 
         // Trigger player footsteps if this is player movement
         if(transform.name == "Player")

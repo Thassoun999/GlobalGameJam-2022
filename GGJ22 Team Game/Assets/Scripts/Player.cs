@@ -6,11 +6,13 @@ public class Player : Mover
 {
 
     public int directionFacing;
+    public bool holdingCrate;
 
     protected override void Start()
     {
         base.Start();
         directionFacing = -1;
+        holdingCrate = false;
     }
 
     private void FixedUpdate()
