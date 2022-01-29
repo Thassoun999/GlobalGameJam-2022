@@ -7,12 +7,20 @@ public class Player : Mover
 
     public int directionFacing;
     public bool holdingCrate;
+    private float worldSwapTimer;
+    private bool inLightWorld;
+    private Vector3 savedPositionLight;
+    private Vector3 savedPositionDark;
 
     protected override void Start()
     {
         base.Start();
         directionFacing = -1;
         holdingCrate = false;
+        worldSwapTimer = 0.0f;
+        inLightWorld = true;
+        savedPositionLight = transform.position;
+        savedPositionDark = transform.position + new Vector3(10.0f, 0.0f, 0.0f);
     }
 
     private void FixedUpdate()
@@ -30,5 +38,31 @@ public class Player : Mover
         }
 
         UpdateMotor(new Vector3(x, y, 0));
+    }
+
+    private void Update()
+    {
+        worldSwapTimer += Time.deltaTime;
+
+        if(worldSwapTimer > 5.0f)
+        {
+            if(Input.GetKeyDown(KeyCode.Q))
+            {
+                if(inLightWorld)
+                {
+                    savedPositionLight = transform.position;
+                    transform.position = savedPositionDark;
+                    inLightWorld = false;
+                }
+                else
+                {
+                    savedPositionDark = transform.position;
+                    transform.position = savedPositionLight;
+                    inLightWorld = true;
+                }
+
+                worldSwapTimer = 0.0f;
+            }
+        }
     }
 }
