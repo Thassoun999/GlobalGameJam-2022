@@ -30,7 +30,7 @@ public class Fighter : MonoBehaviour
             // To normalize a vector means to change it so that it points in the same direction (think of that line from the origin) but its length is one ( |v| = sqrt(x^2 + y^2 + z^2))
             pushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce; 
 
-            GameManager.instance.ShowText(dmg.damageAmount.ToString(), 25, Color.red, transform.position, Vector3.zero, 0.5f);
+            GameManager.instance.ShowText(dmg.damageAmount.ToString(), 25, Color.red, transform.position + (new Vector3(0.0f, 0.1f, 0.0f)), Vector3.zero, 0.5f);
 
             if (hitpoint <= 0)
             {

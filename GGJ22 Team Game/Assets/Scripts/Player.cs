@@ -8,6 +8,7 @@ public class Player : Mover
     public int directionFacing;
     public bool holdingCrate = false;
     private float worldSwapTimer;
+    private float darkWorldDamageTimer;
     private bool inLightWorld;
     private Vector3 savedPositionLight;
     private Vector3 savedPositionDark;
@@ -18,6 +19,7 @@ public class Player : Mover
         directionFacing = -1;
         holdingCrate = false;
         worldSwapTimer = 0.0f;
+        darkWorldDamageTimer = 0.0f;
         inLightWorld = true;
         savedPositionLight = transform.position;
         savedPositionDark = transform.position + new Vector3(10.0f, 0.0f, 0.0f);
@@ -44,6 +46,7 @@ public class Player : Mover
     private void Update()
     {
         worldSwapTimer += Time.deltaTime;
+        darkWorldDamageTimer += Time.deltaTime;
 
         if(worldSwapTimer > 5.0f)
         {
@@ -54,6 +57,7 @@ public class Player : Mover
                     savedPositionLight = transform.position;
                     transform.position = savedPositionDark;
                     inLightWorld = false;
+                    darkWorldDamageTimer = 0.0f;
                 }
                 else
                 {
@@ -63,6 +67,22 @@ public class Player : Mover
                 }
 
                 worldSwapTimer = 0.0f;
+            }
+        }
+
+        if(!inLightWorld)
+        {
+            // When in the dark world the player will progressively take damage, around 1 damage per 10 seconds of time elapsed
+            if (darkWorldDamageTimer > 10.0f)
+            {
+                darkWorldDamageTimer = 0.0f;
+                Damage dmg = new Damage
+                {
+                    damageAmount = 1,
+                    origin = this.transform.position,
+                    pushForce = 0.0f,
+                };
+                this.SendMessage("ReceiveDamage", dmg);
             }
         }
     }
