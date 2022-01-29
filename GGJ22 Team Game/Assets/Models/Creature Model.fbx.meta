@@ -3,7 +3,17 @@ guid: 4fa2fb892d05ba84daa07b7fac01a987
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Spike_Glow
+    second: {fileID: 2100000, guid: a64d01afbcb902a41a36c8d47216e53d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert11
+    second: {fileID: 2100000, guid: 4d7af8dd1c7978a4fb0e8f208a83caa3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
