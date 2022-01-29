@@ -1,0 +1,13 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3124083878	Play_Footsteps_Enemy			\Default Work Unit\Play_Footsteps_Enemy	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	121471041	footstep_enemy_01	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\footstep_enemy_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Enemy\footstep_enemy_01		96064
+	229934857	footstep_enemy_07	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\footstep_enemy_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Enemy\footstep_enemy_07		96064
+	314759783	footstep_enemy_05	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\footstep_enemy_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Enemy\footstep_enemy_05		96064
+	419519649	footstep_enemy_06	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\footstep_enemy_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Enemy\footstep_enemy_06		96064
+	431900055	footstep_enemy_03	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\footstep_enemy_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Enemy\footstep_enemy_03		96064
+	560098719	footstep_enemy_04	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\footstep_enemy_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Enemy\footstep_enemy_04		96064
+	916566040	footstep_enemy_02	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\footstep_enemy_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Enemy\footstep_enemy_02		96064
+	917555558	footstep_enemy_08	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\footstep_enemy_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Enemy\footstep_enemy_08		96064
+

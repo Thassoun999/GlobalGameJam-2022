@@ -16,6 +16,10 @@ public class Enemy : Mover
     private Transform playerTransform;
     private Vector3 startingPosition;
 
+    // movement sfx params
+    private float stepSfxDeltaTime;
+    private float stepSfxWait = 0.175f;
+
     // Hitbox (enemy weapon)
     private BoxCollider2D hitbox;
     private Collider2D[] hits = new Collider2D[10];
@@ -58,6 +62,31 @@ public class Enemy : Mover
         {
             UpdateMotor((startingPosition - transform.position));
             chasing = false;
+        }
+
+        // Enemy walk sound
+        float walkDistance = Vector3.Distance(startingPosition, transform.position);
+        if (walkDistance > 0.1f || chasing)
+        {
+            stepSfxDeltaTime += Time.deltaTime;
+            float adjustedWait = stepSfxWait;
+            if (!chasing)
+            {
+                if (walkDistance > 0.225f)
+                    adjustedWait += 0.025f;
+                else
+                    adjustedWait += 0.025f + (0.225f - walkDistance);
+            }
+
+            if (stepSfxDeltaTime > adjustedWait)
+            {
+                stepSfxDeltaTime -= adjustedWait;
+                AkSoundEngine.PostEvent("Play_Footsteps_Enemy", gameObject);
+            }
+        }
+        else if (walkDistance <= 0.1 && !chasing)
+        {
+            stepSfxDeltaTime = 0.0f;
         }
 
         // Check for overlap with the player

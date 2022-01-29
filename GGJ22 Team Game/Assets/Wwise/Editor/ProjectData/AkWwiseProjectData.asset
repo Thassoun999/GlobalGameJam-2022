@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: e3a874ba47187443bb51ee4b03d8792a
     GuidInternal: 
-    m_lastTime: -8585582067052855899
+    m_lastTime: -8585581089836694957
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: cd9434ea98afba4bb58f7f868659e896
     GuidInternal: 
-    m_lastTime: -8585582067054796336
+    m_lastTime: -8585581089841184890
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 02b2083cbba1a040baabe1dd025d00aa
     GuidInternal: 
-    m_lastTime: -8585581692795766111
+    m_lastTime: -8585581081685970639
     List:
+    - name: EnemySfx
+      guid: 70442690d0721143af3f8f74f57e3ccc
+      id: 406817756
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02b2083cbba1a040baabe1dd025d00aa
+      - ElementName: EnemySfx
+        ObjectType: 7
+        guid: 70442690d0721143af3f8f74f57e3ccc
+      Path: SoundBanks\Default Work Unit\EnemySfx
     - name: Music
       guid: 1e2fe3676f73054bb46cb18657af3a38
       id: 3991942870
@@ -108,8 +122,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: b1e279512870f84fb33171e05b9ca636
     GuidInternal: 
-    m_lastTime: -8585581692795936153
+    m_lastTime: -8585581081686190059
     List:
+    - name: Play_Footsteps_Enemy
+      guid: c6c0b25291228245a300e67be6adbd8c
+      id: 3124083878
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: Play_Footsteps_Enemy
+        ObjectType: 3
+        guid: c6c0b25291228245a300e67be6adbd8c
+      Path: Events\Default Work Unit\Play_Footsteps_Enemy
+      maxAttenuation: 5
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Play_Footsteps_Player
       guid: 02b9a3e7fcb46d439335764b0c807c5f
       id: 3044539581
@@ -155,7 +186,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: 1579479ec74c1545ab665017a79f3f72
     GuidInternal: 
-    m_lastTime: -8585582067057296888
+    m_lastTime: -8585581089847841229
     List:
     - name: Entry_Theme
       guid: 22cce93658d79f4db18685f2d7ba9a9f
@@ -186,7 +217,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 56b1788ab85b9f4590facde5337522dc
     GuidInternal: 
-    m_lastTime: -8585582067057256901
+    m_lastTime: -8585581089847751467
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -200,7 +231,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 1837a4d01c783940b46b12d9bdb2a91e
     GuidInternal: 
-    m_lastTime: -8585582067052865900
+    m_lastTime: -8585581089836734847
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -214,7 +245,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 9ec52069e7f8f94ab7c5c10de0aa5cd7
     GuidInternal: 
-    m_lastTime: -8585582067052865900
+    m_lastTime: -8585581089836724872
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -228,10 +259,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 17075a0b101c3b4a8a7c2330252bd06d
     GuidInternal: 
-    m_lastTime: -8585582067052855899
+    m_lastTime: -8585581089836704927
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 02000000030000000d0000000e000000
+  ExpandedWaapiItemIds: 05000000060000000d0000000e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
