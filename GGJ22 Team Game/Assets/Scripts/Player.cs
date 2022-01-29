@@ -6,7 +6,7 @@ public class Player : Mover
 {
 
     public int directionFacing;
-    public bool holdingCrate;
+    public bool holdingCrate = false;
     private float worldSwapTimer;
     private bool inLightWorld;
     private Vector3 savedPositionLight;
@@ -40,6 +40,7 @@ public class Player : Mover
         UpdateMotor(new Vector3(x, y, 0));
     }
 
+
     private void Update()
     {
         worldSwapTimer += Time.deltaTime;
@@ -65,4 +66,5 @@ public class Player : Mover
             }
         }
     }
+    
 }

@@ -18179,6 +18179,17 @@ MonoBehaviour:
   unloadTriggerList: 
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &1113354494 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1684633112428568357, guid: e3e754ca0c00b304bad16e6f9f4f460f, type: 3}
+  m_PrefabInstance: {fileID: 1684633111981026295}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113354490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 855ad363a27ca1a4d8259f9012603870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1142679051
 GameObject:
   m_ObjectHideFlags: 0
@@ -19977,17 +19988,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1525360987 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1684633112428568357, guid: e3e754ca0c00b304bad16e6f9f4f460f, type: 3}
-  m_PrefabInstance: {fileID: 1684633111981026295}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1113354490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 855ad363a27ca1a4d8259f9012603870, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1531019990 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1780979632209426614, guid: 5a0de0f61dd0bb447a7911edeaf3074c, type: 3}
@@ -65662,7 +65662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c6394ad5769ded498714d2342e8d434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1525360987}
+  player: {fileID: 1113354494}
   floatingTextManager: {fileID: 24491477}
   numArtifacts: 0
   experience: 0
@@ -66310,10 +66310,6 @@ PrefabInstance:
     - target: {fileID: 1684633112428568355, guid: e3e754ca0c00b304bad16e6f9f4f460f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1684633112428568357, guid: e3e754ca0c00b304bad16e6f9f4f460f, type: 3}
-      propertyPath: holdingCrate
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1684633112428568357, guid: e3e754ca0c00b304bad16e6f9f4f460f, type: 3}
       propertyPath: pushRecoveryspeed

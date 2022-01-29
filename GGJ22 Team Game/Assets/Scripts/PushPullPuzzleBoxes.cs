@@ -15,17 +15,6 @@ public class PushPullPuzzleBoxes : Collidable
     protected override void Update()
     {
         base.Update();
-
-        if (isHeld)
-        {
-            GameManager.instance.player.holdingCrate = true;
-            transform.parent = GameManager.instance.player.transform;
-        }
-        else 
-        {
-            GameManager.instance.player.holdingCrate = false;
-            transform.parent = null;
-        }
     }
 
     protected override void OnCollide(Collider2D coll)
@@ -44,6 +33,17 @@ public class PushPullPuzzleBoxes : Collidable
             {
                 isHeld = false;
             }
+        }
+
+        if (isHeld)
+        {
+            GameManager.instance.player.holdingCrate = true;
+            transform.parent = GameManager.instance.player.transform;
+        }
+        else if (!isHeld)
+        {
+            GameManager.instance.player.holdingCrate = false;
+            transform.parent = null;
         }
 
     }
