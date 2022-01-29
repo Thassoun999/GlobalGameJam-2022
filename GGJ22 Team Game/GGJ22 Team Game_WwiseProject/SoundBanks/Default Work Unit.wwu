@@ -12,6 +12,7 @@
 				</SoundBank>
 				<SoundBank Name="PlayerSfx" ID="{3EAA651D-2323-4CA2-B880-F771E843DEAC}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Sword_Player" ID="{A4582B8D-FD25-42DC-9138-DA93C79DD447}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps_Player" ID="{E7A3B902-B4FC-436D-9335-764B0C807C5F}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

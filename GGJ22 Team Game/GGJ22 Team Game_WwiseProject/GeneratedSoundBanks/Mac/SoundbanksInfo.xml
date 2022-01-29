@@ -35,7 +35,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="4283257371" Language="SFX" Hash="2596163673">
+		<SoundBank Id="4283257371" Language="SFX" Hash="2350343258">
 			<ObjectPath>\SoundBanks\Default Work Unit\PlayerSfx</ObjectPath>
 			<ShortName>PlayerSfx</ShortName>
 			<Path>PlayerSfx.bnk</Path>
@@ -53,6 +53,26 @@
 						<File Id="324952742" Language="SFX">
 							<ShortName>footstep_hard_01.wav</ShortName>
 							<Path>SFX\footstep_hard_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="423282211" Name="Play_Sword_Player" ObjectPath="\Events\Default Work Unit\Play_Sword_Player" DurationType="OneShot" DurationMin="0.152708" DurationMax="0.174604">
+					<IncludedMemoryFiles>
+						<File Id="27666835" Language="SFX">
+							<ShortName>sword_swing_04.wav</ShortName>
+							<Path>SFX\sword_swing_04_10C4C929.wem</Path>
+						</File>
+						<File Id="459864622" Language="SFX">
+							<ShortName>sword_swing_01.wav</ShortName>
+							<Path>SFX\sword_swing_01_10C4C929.wem</Path>
+						</File>
+						<File Id="674539620" Language="SFX">
+							<ShortName>sword_swing_02.wav</ShortName>
+							<Path>SFX\sword_swing_02_10C4C929.wem</Path>
+						</File>
+						<File Id="911419203" Language="SFX">
+							<ShortName>sword_swing_03.wav</ShortName>
+							<Path>SFX\sword_swing_03_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Sword_Player" ID="{A4582B8D-FD25-42DC-9138-DA93C79DD447}">
+					<ChildrenList>
+						<Action Name="" ID="{D67631B5-E23C-4E3B-8A29-17E85B0E3BE8}" ShortID="340763580">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sword_Player" ID="{9418A44F-8253-4B12-B74B-68628F809F6E}" WorkUnitID="{86B3B1B6-468C-4DBD-9DDF-CA67EFB1513E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
