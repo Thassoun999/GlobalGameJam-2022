@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID ENTRY_THEME = 2404684705U;
         static const AkUniqueID PLAY_FOOTSTEPS_PLAYER = 3044539581U;
+        static const AkUniqueID PLAY_SWORD_PLAYER = 423282211U;
     } // namespace EVENTS
 
     namespace BANKS

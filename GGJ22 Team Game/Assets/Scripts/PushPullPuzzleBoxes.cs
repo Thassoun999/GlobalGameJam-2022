@@ -34,6 +34,10 @@ public class PushPullPuzzleBoxes : Collidable
         {
             if(Input.GetKey(KeyCode.R))
             {
+                if(!isHeld)
+                {
+                    // Play grab sound
+                }
                 isHeld = true;
             }
             else

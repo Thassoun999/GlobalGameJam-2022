@@ -86,6 +86,7 @@ public class Weapon : Collidable
     private void Swing()
     {
         animController.SetTrigger("Swing");
+        AkSoundEngine.PostEvent("Play_Sword_Player", gameObject);
     }
 
     private void SpecialSwing()
