@@ -5,22 +5,47 @@
 			<ChildrenList>
 				<SoundBank Name="Music" ID="{67E32F1E-736F-4B05-B46C-B18657AF3A38}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Entry_Theme" ID="{36E9CC22-D758-4D9F-B186-85F2D7BA9A9F}" WorkUnitID="{9E477915-4CC7-4515-AB66-5017A79F3F72}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Zero_Theme" ID="{36E9CC22-D758-4D9F-B186-85F2D7BA9A9F}" WorkUnitID="{9E477915-4CC7-4515-AB66-5017A79F3F72}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="PlayerSfx" ID="{3EAA651D-2323-4CA2-B880-F771E843DEAC}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Portal_To_Dark_Player" ID="{6E7D97E4-F4A2-4011-8D42-9519138BAD8A}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Grab_Box_Player" ID="{2020192C-D173-4222-8CDB-3CAE853B64D9}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Sword_Charge_Ready_Player" ID="{8E1207F4-E4C3-42D6-ABB1-DF5880FE7EF1}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Sword_Player" ID="{A4582B8D-FD25-42DC-9138-DA93C79DD447}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps_Player" ID="{E7A3B902-B4FC-436D-9335-764B0C807C5F}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Pickup_Health_Player" ID="{0B7F1910-3A4F-4569-A520-4EE0B99E3F3B}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Portal_To_Light_Player" ID="{00A34E9F-0016-4662-84DB-D79273A70BA8}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Sword_Charge_Swing_Player" ID="{2CEF80B5-7D16-46B1-8AE5-82B7FE835E40}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Take_Damage_Player" ID="{12A3B1F6-AAC7-4CE8-8609-55C1A67EF5EE}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Pickup_Item_Player" ID="{EA610CA2-7218-4E2E-9E3E-AEA7E4CF737D}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="EnemySfx" ID="{90264470-72D0-4311-AF3F-8F74F57E3CCC}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Shout_L_Enemy" ID="{AA6FAA5B-9BAF-43D8-A4C3-6EA0AA058773}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Death_Enemy" ID="{4A3DB95E-716E-4442-8BB5-AC3445CB5DE3}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Take_Damage_Enemy" ID="{B595916B-9C42-4570-A9D7-361251F59832}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps_Enemy" ID="{52B2C0C6-2291-4582-A300-E67BE6ADBD8C}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Shout_S_Enemy" ID="{3EED04A6-8CA4-4F4C-B8F7-94766EDFECBB}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="EnvSfx" ID="{871553C9-AA08-41C3-9442-B5842EBB73F0}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Stop_Box_Drag_Env" ID="{621F007A-ED28-413B-B326-628C062B8A17}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Switch_Flip_Env" ID="{D2BD88DE-09B0-4173-9986-CFC733EBB79C}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Door_Open_Env" ID="{814B7B6D-6E87-423C-9D21-C732A2693E9E}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Door_Close_Env" ID="{ED82AB89-560A-4276-8308-BDC09DC8574E}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Box_Drag_Env" ID="{F3FCEB54-2BE5-438E-AE0C-A6353589072B}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Projectile_Fly_Env" ID="{7AFCE8DF-50D8-44EA-8ADF-FA4D11C8FA0B}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Projectile_Hit_Env" ID="{7B082092-2BE3-4FBF-84EA-E6B9B51BB9C4}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
