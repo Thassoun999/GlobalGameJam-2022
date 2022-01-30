@@ -18,24 +18,15 @@ public class GameManager : MonoBehaviour
     public FloatingTextManager floatingTextManager;
 
     // Logic that will be preserved in the save state
-    public int numArtifacts; // starts at 0! Goes to 2!
     public int experience;
 
     // We can only have ONE instance of GameManager
     private void Awake()
     {   
-        if (GameManager.instance != null) // ensuring that this remains a singleton
-        {
-            Destroy(gameObject);
-            return;
-        }
-
         // PlayerPrefs.DeleteAll(); This function deletes all the save data
-
         instance = this;
-        numArtifacts = 0;
         // SceneManager.sceneLoaded += LoadState;
-        DontDestroyOnLoad(gameObject); // make sure that a single instance can persist between scene changes
+        // DontDestroyOnLoad(gameObject); // make sure that a single instance can persist between scene changes
     }
 
     // Call for floating text

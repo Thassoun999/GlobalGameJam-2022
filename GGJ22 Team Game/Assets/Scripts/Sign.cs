@@ -20,6 +20,8 @@ public class Sign : Collidable
         signDialogue[3] = "Everything you kill crosses to the other side... Either vengeful or grateful...";
         signDialogue[4] = "A symbol... Maybe a good idea to remember it for something?";
         signDialogue[5] = "The door on this side does not work, you must cross over.";
+        signDialogue[6] = "Hold R to grab the crate, there's a chance you can take it with you...";
+        signDialogue[7] = "With this key you can seal the rift! Go back! The lever opened the door at the start!";
     }
     protected override void Update()
     {

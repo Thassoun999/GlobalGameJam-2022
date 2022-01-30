@@ -50,7 +50,6 @@ public class Enemy : Mover
             // Is the player within trigger length to begin chase?
             if (Vector3.Distance(playerTransform.position, transform.position) < triggerLength)
             {
-                Debug.Log("Here");
                 chasing = true;
             }
 

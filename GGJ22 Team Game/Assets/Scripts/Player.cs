@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Player : Mover
 {
 
+
     public int directionFacing;
     public bool holdingCrate = false;
     private float worldSwapTimer;
@@ -13,13 +14,12 @@ public class Player : Mover
     private bool inLightWorld;
     private Vector3 savedPositionLight;
     private Vector3 savedPositionDark;
-    private Vector3 sceneStartingPosition;
+    public Vector3 sceneStartingPosition;
     public HealthBar healthBar;
 
     // transport logic
     public Vector3 transportVec;
     
-
     protected override void Start()
     {
         base.Start();

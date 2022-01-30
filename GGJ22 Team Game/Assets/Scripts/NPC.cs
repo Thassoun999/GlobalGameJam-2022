@@ -16,7 +16,7 @@ public class NPC : Collidable
     {
         base.Start();
         messageTimer = 7.0f;
-        progress = GameManager.instance.numArtifacts;
+        progress = GameManager2.instance.numArtifacts;
         dialogueNPC[0] = "A rift has been torn between worlds! Go WEST and find a way to heal the tear!";
         // dialogueNPC[1] = "What you have will help you survive the poisonous swamp to the EAST!! The artifact to close the rift is there!";
         dialogueNPC[1] = "You have it! Good! Now go to the rift and restore balance! But BEWARE of what may stop you!!!";
