@@ -16,10 +16,14 @@ public abstract class Mover : Fighter
 
     private RaycastHit2D hit;
 
+    // Animator Controller
+    private Animator animController; 
+
 
     protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
+        animController = GetComponent<Animator>();
     }
 
     protected virtual void UpdateMotor(Vector3 input)
@@ -31,10 +35,15 @@ public abstract class Mover : Fighter
         if (GameManager.instance.player.holdingCrate == false)
         {
             if (moveDelta.x < 0)
-                transform.localScale = Vector3.one;
-            else if (moveDelta.x > 0)
                 transform.localScale = new Vector3(-1, 1, 1);
+            else if (moveDelta.x > 0)
+                transform.localScale = Vector3.one;
         }
+
+        if(-moveDelta.x != 0 || moveDelta.y != 0)
+            animController.SetBool("Walking", true);
+        else
+            animController.SetBool("Walking", false);
 
 
         // Trigger player footsteps if this is player movement
@@ -78,4 +87,5 @@ public abstract class Mover : Fighter
             transform.Translate(moveDelta.x * Time.deltaTime * moveSpeed, 0, 0);
         }
     }
+
 }

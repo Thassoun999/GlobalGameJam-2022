@@ -25,6 +25,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Footsteps_Enemy" ID="{52B2C0C6-2291-4582-A300-E67BE6ADBD8C}">
+					<ChildrenList>
+						<Action Name="" ID="{598C115B-DC7C-4CC5-AB1E-EDE6A3132276}" ShortID="831945503">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_Enemy" ID="{3CBCA170-2DAB-40BE-9052-BA6549CEC700}" WorkUnitID="{86B3B1B6-468C-4DBD-9DDF-CA67EFB1513E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

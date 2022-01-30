@@ -18,6 +18,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="EnemySfx" ID="{90264470-72D0-4311-AF3F-8F74F57E3CCC}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Footsteps_Enemy" ID="{52B2C0C6-2291-4582-A300-E67BE6ADBD8C}" WorkUnitID="{5179E2B1-7028-4FF8-B331-71E05B9CA636}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Enemy : Mover
 {
+    // Large Enemy Variant
+    public LargeEnemy largeVariant;
+
     // Experience + Movement Speed
     public int xpValue = 1;
 
@@ -15,6 +18,10 @@ public class Enemy : Mover
     private bool collidingWithPlayer;
     private Transform playerTransform;
     private Vector3 startingPosition;
+
+    // movement sfx params
+    private float stepSfxDeltaTime;
+    private float stepSfxWait = 0.175f;
 
     // Hitbox (enemy weapon)
     private BoxCollider2D hitbox;
@@ -60,6 +67,31 @@ public class Enemy : Mover
             chasing = false;
         }
 
+        // Enemy walk sound
+        float walkDistance = Vector3.Distance(startingPosition, transform.position);
+        if (walkDistance > 0.1f || chasing)
+        {
+            stepSfxDeltaTime += Time.deltaTime;
+            float adjustedWait = stepSfxWait;
+            if (!chasing)
+            {
+                if (walkDistance > 0.225f)
+                    adjustedWait += 0.025f;
+                else
+                    adjustedWait += 0.025f + (0.225f - walkDistance);
+            }
+
+            if (stepSfxDeltaTime > adjustedWait)
+            {
+                stepSfxDeltaTime -= adjustedWait;
+                AkSoundEngine.PostEvent("Play_Footsteps_Enemy", gameObject);
+            }
+        }
+        else if (walkDistance <= 0.1 && !chasing)
+        {
+            stepSfxDeltaTime = 0.0f;
+        }
+
         // Check for overlap with the player
         collidingWithPlayer = false;
         boxCollider.OverlapCollider(filter, hits); // Get a list of results that overlap this collider (looking for other colliders beneath or above it)
@@ -79,6 +111,7 @@ public class Enemy : Mover
 
     protected override void Death()
     {
+        Instantiate(largeVariant, transform.position + new Vector3(10.0f, 0.0f, 0.0f), Quaternion.identity);
         Destroy(gameObject);
         GameManager.instance.experience += xpValue;
         GameManager.instance.ShowText("+" + xpValue + " exp!", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);

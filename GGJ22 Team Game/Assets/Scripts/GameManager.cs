@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
         // PlayerPrefs.DeleteAll(); This function deletes all the save data
 
         instance = this;
-        SceneManager.sceneLoaded += LoadState;
+        // SceneManager.sceneLoaded += LoadState;
         DontDestroyOnLoad(gameObject); // make sure that a single instance can persist between scene changes
     }
 
@@ -29,14 +29,12 @@ public class GameManager : MonoBehaviour
 
     // References -> Can be the player, the weapon they have, potential upgrades, etc.
     public Player player;
-    // public weapon weapon...
+
     public FloatingTextManager floatingTextManager;
 
     // Logic that will be preserved in the save state
     public int numArtifacts;
     public int experience;
-    public int areasUnlocked;
-    public int charLevel;
 
     // Call for floating text
     public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
@@ -50,7 +48,7 @@ public class GameManager : MonoBehaviour
     * INT areasUnlocked
     * INT experience
     * INT charLevel
-    */
+    
     public void SaveState()
     {
         string s = "";
@@ -79,4 +77,5 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("LoadState");
     }
+    */
 }

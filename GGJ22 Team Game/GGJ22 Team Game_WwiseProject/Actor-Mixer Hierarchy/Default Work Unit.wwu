@@ -197,6 +197,209 @@
 					</ChildrenList>
 					<ObjectLists/>
 				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Footsteps_Enemy" ID="{3CBCA170-2DAB-40BE-9052-BA6549CEC700}" ShortID="177469870">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Enemy_Attenuation" ID="{2BD4AA37-D4F6-4827-85E9-79199EEB8462}" WorkUnitID="{11482D0F-4F9E-48D4-8E33-E25F43AAF4DB}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4184B28-7192-4F00-AE45-1361F83F88E5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA3494CD-AF98-4BBA-B58F-7F868659E896}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="footstep_enemy_01" ID="{C4002178-31CC-48F0-8419-5C021C983383}" ShortID="950484374">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4184B28-7192-4F00-AE45-1361F83F88E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA3494CD-AF98-4BBA-B58F-7F868659E896}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="footstep_enemy_01" ID="{7D1654DF-4688-4D4B-A6BF-5E932FB9E493}">
+									<Language>SFX</Language>
+									<AudioFile>footstep_enemy_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="121471041"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="footstep_enemy_01" ID="{7D1654DF-4688-4D4B-A6BF-5E932FB9E493}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="footstep_enemy_02" ID="{5542DFBD-5CC5-47D6-8DA5-60845E1A247B}" ShortID="346268184">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4184B28-7192-4F00-AE45-1361F83F88E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA3494CD-AF98-4BBA-B58F-7F868659E896}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="footstep_enemy_02" ID="{1D48339D-2830-4978-BF1E-B7EA211B5453}">
+									<Language>SFX</Language>
+									<AudioFile>footstep_enemy_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="916566040"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="footstep_enemy_02" ID="{1D48339D-2830-4978-BF1E-B7EA211B5453}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="footstep_enemy_03" ID="{2C04CB7C-A851-4D0F-B6C5-1FC53C452930}" ShortID="840799496">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4184B28-7192-4F00-AE45-1361F83F88E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA3494CD-AF98-4BBA-B58F-7F868659E896}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="footstep_enemy_03" ID="{B3A2C054-7DFA-4CB2-9E23-AD72A1FDB040}">
+									<Language>SFX</Language>
+									<AudioFile>footstep_enemy_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="431900055"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="footstep_enemy_03" ID="{B3A2C054-7DFA-4CB2-9E23-AD72A1FDB040}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="footstep_enemy_04" ID="{CDFFE0AC-7436-4248-9DAE-057249DF7BAA}" ShortID="758593698">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4184B28-7192-4F00-AE45-1361F83F88E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA3494CD-AF98-4BBA-B58F-7F868659E896}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="footstep_enemy_04" ID="{4014B73C-EACE-451C-93DB-382EC08C102B}">
+									<Language>SFX</Language>
+									<AudioFile>footstep_enemy_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="560098719"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="footstep_enemy_04" ID="{4014B73C-EACE-451C-93DB-382EC08C102B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="footstep_enemy_05" ID="{9AC9C69A-5710-4EF5-8BCA-18F8CE664187}" ShortID="664385294">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4184B28-7192-4F00-AE45-1361F83F88E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA3494CD-AF98-4BBA-B58F-7F868659E896}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="footstep_enemy_05" ID="{CD6F378F-95EE-4ABC-9DDA-9A09E28ABE85}">
+									<Language>SFX</Language>
+									<AudioFile>footstep_enemy_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="314759783"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="footstep_enemy_05" ID="{CD6F378F-95EE-4ABC-9DDA-9A09E28ABE85}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="footstep_enemy_06" ID="{EEEB5A36-5539-4AC5-B1CC-C3B83FDDC8F1}" ShortID="1018433016">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4184B28-7192-4F00-AE45-1361F83F88E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA3494CD-AF98-4BBA-B58F-7F868659E896}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="footstep_enemy_06" ID="{59A8E54F-44BC-49B0-8BB7-34FD33DACD27}">
+									<Language>SFX</Language>
+									<AudioFile>footstep_enemy_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="419519649"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="footstep_enemy_06" ID="{59A8E54F-44BC-49B0-8BB7-34FD33DACD27}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="footstep_enemy_07" ID="{89358EED-D1CE-4514-B5EA-1E60826C98B2}" ShortID="586121537">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4184B28-7192-4F00-AE45-1361F83F88E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA3494CD-AF98-4BBA-B58F-7F868659E896}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="footstep_enemy_07" ID="{5E642561-4C55-4090-9460-E365384D3B6F}">
+									<Language>SFX</Language>
+									<AudioFile>footstep_enemy_07.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="229934857"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="footstep_enemy_07" ID="{5E642561-4C55-4090-9460-E365384D3B6F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="footstep_enemy_08" ID="{E1BE1912-4021-48E6-BAE6-ED0B8D592A80}" ShortID="869413622">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E4184B28-7192-4F00-AE45-1361F83F88E5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EA3494CD-AF98-4BBA-B58F-7F868659E896}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="footstep_enemy_08" ID="{944DD1CF-0569-49BF-85C1-0E4075CAD0AF}">
+									<Language>SFX</Language>
+									<AudioFile>footstep_enemy_08.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="917555558"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="footstep_enemy_08" ID="{944DD1CF-0569-49BF-85C1-0E4075CAD0AF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 02b2083cbba1a040baabe1dd025d00aa
     GuidInternal: 
-    m_lastTime: -8585581692795766111
+    m_lastTime: -8585581073627907216
     List:
+    - name: EnemySfx
+      guid: 70442690d0721143af3f8f74f57e3ccc
+      id: 406817756
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02b2083cbba1a040baabe1dd025d00aa
+      - ElementName: EnemySfx
+        ObjectType: 7
+        guid: 70442690d0721143af3f8f74f57e3ccc
+      Path: SoundBanks\Default Work Unit\EnemySfx
     - name: Music
       guid: 1e2fe3676f73054bb46cb18657af3a38
       id: 3991942870
@@ -108,8 +122,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: b1e279512870f84fb33171e05b9ca636
     GuidInternal: 
-    m_lastTime: -8585581692795936153
+    m_lastTime: -8585581073628187280
     List:
+    - name: Play_Footsteps_Enemy
+      guid: c6c0b25291228245a300e67be6adbd8c
+      id: 3124083878
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: Play_Footsteps_Enemy
+        ObjectType: 3
+        guid: c6c0b25291228245a300e67be6adbd8c
+      Path: Events\Default Work Unit\Play_Footsteps_Enemy
+      maxAttenuation: 5
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Play_Footsteps_Player
       guid: 02b9a3e7fcb46d439335764b0c807c5f
       id: 3044539581
