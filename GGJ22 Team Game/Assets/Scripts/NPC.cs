@@ -30,10 +30,13 @@ public class NPC : Collidable
 
     protected override void OnCollide(Collider2D coll)
     {
-        if(messageTimer > 7.0f)
+        if(coll.name == "Player")
         {
-            messageTimer = 0.0f;
-            GameManager.instance.ShowText(dialogueNPC[1], 35, Color.white, transform.position + (new Vector3(0.0f, 0.2f, 0.0f)), Vector3.zero, 6.5f, 0);
+            if(messageTimer > 7.0f)
+            {
+                messageTimer = 0.0f;
+                GameManager.instance.ShowText(dialogueNPC[progress], 35, Color.white, transform.position + (new Vector3(0.0f, 0.2f, 0.0f)), Vector3.zero, 6.5f, 0);
+            }
         }
     }
 }

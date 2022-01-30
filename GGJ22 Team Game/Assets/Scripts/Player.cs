@@ -16,6 +16,8 @@ public class Player : Mover
     private Vector3 sceneStartingPosition;
     public HealthBar healthBar;
 
+    // transport logic
+    public Vector3 transportVec;
     
 
     protected override void Start()
@@ -27,7 +29,7 @@ public class Player : Mover
         darkWorldDamageTimer = 0.0f;
         inLightWorld = true;
         savedPositionLight = transform.position;
-        savedPositionDark = transform.position + new Vector3(10.0f, 0.0f, 0.0f);
+        savedPositionDark = transform.position + transportVec;
 
         sceneStartingPosition = transform.position;
     }
