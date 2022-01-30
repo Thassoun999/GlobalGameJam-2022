@@ -217,7 +217,7 @@ MonoBehaviour:
   pushRecoveryspeed: 0.2
   largeVariant: {fileID: 3757732248659390035, guid: 0e615a3048c05774f9c35372a2afa938, type: 3}
   xpValue: 1
-  triggerLength: 0.5
+  triggerLength: 1
   chaseLength: 1.25
   filter:
     useTriggers: 0
@@ -233,6 +233,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  transportVec: {x: 50, y: 0, z: 0}
 --- !u!114 &6368235459047196143
 MonoBehaviour:
   m_ObjectHideFlags: 0

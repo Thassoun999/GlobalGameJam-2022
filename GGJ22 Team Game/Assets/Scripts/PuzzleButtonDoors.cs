@@ -8,10 +8,17 @@ public class PuzzleButtonDoors : Collidable
     public GameObject doorGroup;
     private bool pressed;
 
+    // For changing the lever art depending on "pressed" bool
+    public Sprite on;
+    public Sprite off;
+    private SpriteRenderer spriteRenderer;
+
     protected override void Start()
     {
         base.Start();
         pressed = false;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = off;
     }
 
     protected override void Update()
@@ -37,10 +44,12 @@ public class PuzzleButtonDoors : Collidable
     {
         if (pressed)
         {
+            spriteRenderer.sprite = on;
             doorGroup.SetActive(false);
         }
         else
         {
+            spriteRenderer.sprite = off;
             doorGroup.SetActive(true);
         }
     }

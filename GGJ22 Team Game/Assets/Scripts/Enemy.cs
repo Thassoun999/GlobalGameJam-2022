@@ -28,6 +28,9 @@ public class Enemy : Mover
     private Collider2D[] hits = new Collider2D[10];
     public ContactFilter2D filter;
 
+    // transport logic
+    public Vector3 transportVec;
+
     protected override void Start()
     {
         base.Start();
@@ -35,8 +38,8 @@ public class Enemy : Mover
         startingPosition = transform.position;
         hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
 
-        ySpeed = 0.375f;
-        xSpeed = 0.5f;
+        ySpeed = 0.5f;
+        xSpeed = 1.5f;
     }
 
     private void FixedUpdate()
@@ -46,14 +49,18 @@ public class Enemy : Mover
         {
             // Is the player within trigger length to begin chase?
             if (Vector3.Distance(playerTransform.position, transform.position) < triggerLength)
+            {
+                Debug.Log("Here");
                 chasing = true;
+            }
 
             // Start chasing
             if (chasing)
             {
                 // Stop chasing when you're colliding, just stop moving as damage is already being done
-                if (!collidingWithPlayer)
+                if (!collidingWithPlayer){
                     UpdateMotor((playerTransform.position - transform.position).normalized);
+                }
             }
             else
             {
@@ -63,7 +70,7 @@ public class Enemy : Mover
         } 
         else 
         {
-            UpdateMotor((startingPosition - transform.position));
+                UpdateMotor((startingPosition - transform.position));
             chasing = false;
         }
 
@@ -111,7 +118,7 @@ public class Enemy : Mover
 
     protected override void Death()
     {
-        Instantiate(largeVariant, transform.position + new Vector3(10.0f, 0.0f, 0.0f), Quaternion.identity);
+        Instantiate(largeVariant, transform.position + transportVec, Quaternion.identity);
         Destroy(gameObject);
         GameManager.instance.experience += xpValue;
         // GameManager.instance.ShowText("+" + xpValue + " exp!", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);

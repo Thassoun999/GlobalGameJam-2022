@@ -9,11 +9,19 @@ public class PuzzleSwitchSymbols : Collidable
     private bool pressed;
     private float symbolChangeTime;
 
+    // For changing the pressureplate art depending on "pressed" bool
+    public Sprite on;
+    public Sprite off;
+    private SpriteRenderer spriteRenderer;
+
     protected override void Start()
     {
         base.Start();
         pressed = false;
         symbolChangeTime = 0.0f;
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = off;
     }
 
     protected override void Update()
@@ -30,6 +38,7 @@ public class PuzzleSwitchSymbols : Collidable
         {
             symbolChangeTime = 0.0f;
             pressed = true;
+            spriteRenderer.sprite = on;
         }
     }
 

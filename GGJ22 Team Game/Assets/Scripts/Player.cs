@@ -56,7 +56,7 @@ public class Player : Mover
         worldSwapTimer += Time.deltaTime;
         darkWorldDamageTimer += Time.deltaTime;
 
-        if(worldSwapTimer > 5.0f)
+        if(worldSwapTimer > 3.0f)
         {
             if(Input.GetKeyDown(KeyCode.Q))
             {

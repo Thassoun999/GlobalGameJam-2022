@@ -32,8 +32,8 @@ public class LargeEnemy : Mover
         startingPosition = transform.position;
         hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
 
-        ySpeed = 0.375f;
-        xSpeed = 0.5f;
+        ySpeed = 0.5f;
+        xSpeed = 1.5f;
     }
 
     private void FixedUpdate()
