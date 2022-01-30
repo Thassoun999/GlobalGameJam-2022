@@ -5,7 +5,7 @@
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1643400180" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\States\Default Work Unit.wwu" DateLow="1643400180" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1643400180" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1643437605" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1643499522" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Queries\Factory Queries.wwu" DateLow="1643400180" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1643400180" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1643400180" DateHigh="0"/>
@@ -17,10 +17,10 @@
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Interactive Music Hierarchy\Music.wwu" DateLow="1643401363" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1643400179" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\GGJ22 Team Game_WwiseProject.wproj" DateLow="1643400179" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\GGJ22 Team Game_WwiseProject.Thass.wsettings" DateLow="1643488984" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\GGJ22 Team Game_WwiseProject.Thass.wsettings" DateLow="1643497397" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1643400179" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Events\Music.wwu" DateLow="1643400179" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Events\Default Work Unit.wwu" DateLow="1643437605" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Events\Default Work Unit.wwu" DateLow="1643499522" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Effects\Factory Effects.wwu" DateLow="1643400179" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1643400179" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1643400179" DateHigh="0"/>
@@ -29,5 +29,5 @@
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1643400179" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1643400179" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1643400179" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1643437605" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Thass\OneDrive\Documents\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1643499522" DateHigh="0"/>
 </ValidationCache>

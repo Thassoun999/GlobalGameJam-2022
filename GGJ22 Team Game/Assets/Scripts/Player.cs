@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : Mover
 {
 
-    // Need to implement a directionFacing horizontal and a directionFacing vertical ugh
     public int directionFacing;
     public bool holdingCrate = false;
     private float worldSwapTimer;

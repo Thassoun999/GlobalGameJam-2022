@@ -10,11 +10,11 @@ public abstract class Mover : Fighter
     protected float ySpeed = 0.75f;
     protected float xSpeed = 1.0f;
 
-    protected float playerSfxTimeDelta;
-    protected float playerSfxWait = 0.175f;
-    protected bool playerIsMoving;
-    protected RaycastHit2D hit;
+    private float playerSfxTimeDelta;
+    private float playerSfxWait = 0.175f;
+    private bool playerIsMoving;
 
+    private RaycastHit2D hit;
 
 
     protected virtual void Start()
@@ -30,16 +30,10 @@ public abstract class Mover : Fighter
         // Swap sprite direction, whether you're going left or right (IF NOT HOLDING A CRATE)
         if (GameManager.instance.player.holdingCrate == false)
         {
-            // Prioritize left and right movement for diagonal movement and then up and down movement
             if (moveDelta.x < 0)
-                transform.GetChild(0).rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+                transform.localScale = Vector3.one;
             else if (moveDelta.x > 0)
-                transform.GetChild(0).rotation = Quaternion.Euler(0.0f, 0.0f, 180.0f);
-            else if (moveDelta.y < 0)
-                transform.rotation = Quaternion.Euler(0, 0, 90);
-            else if (moveDelta.y > 0)
-                transform.rotation = Quaternion.Euler(0, 0, -90);
-            
+                transform.localScale = new Vector3(-1, 1, 1);
         }
 
 
