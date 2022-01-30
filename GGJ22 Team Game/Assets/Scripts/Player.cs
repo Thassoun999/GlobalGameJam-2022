@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : Mover
 {
@@ -12,6 +13,8 @@ public class Player : Mover
     private bool inLightWorld;
     private Vector3 savedPositionLight;
     private Vector3 savedPositionDark;
+    private Vector3 sceneStartingPosition;
+    public HealthBar healthBar;
 
     
 
@@ -25,6 +28,8 @@ public class Player : Mover
         inLightWorld = true;
         savedPositionLight = transform.position;
         savedPositionDark = transform.position + new Vector3(10.0f, 0.0f, 0.0f);
+
+        sceneStartingPosition = transform.position;
     }
 
     private void FixedUpdate()
@@ -43,7 +48,6 @@ public class Player : Mover
 
         UpdateMotor(new Vector3(x, y, 0));
     }
-
 
     private void Update()
     {
@@ -87,6 +91,18 @@ public class Player : Mover
                 this.SendMessage("ReceiveDamage", dmg);
             }
         }
+
+        // Update Healthbar
+        healthBar.SetHealth(hitpoint);
+
     }
-    
+
+    protected override void Death()
+    {
+        hitpoint = maxHitpoint;
+        transform.position = sceneStartingPosition;
+
+    }
+
+
 }
