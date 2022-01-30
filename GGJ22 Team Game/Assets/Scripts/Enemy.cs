@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Enemy : Mover
 {
+    // Large Enemy Variant
+    public LargeEnemy largeVariant;
+
     // Experience + Movement Speed
     public int xpValue = 1;
 
@@ -108,6 +111,7 @@ public class Enemy : Mover
 
     protected override void Death()
     {
+        Instantiate(largeVariant, transform.position + new Vector3(10.0f, 0.0f, 0.0f), Quaternion.identity);
         Destroy(gameObject);
         GameManager.instance.experience += xpValue;
         GameManager.instance.ShowText("+" + xpValue + " exp!", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);

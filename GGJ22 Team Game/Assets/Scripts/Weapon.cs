@@ -40,7 +40,7 @@ public class Weapon : Collidable
         if (Time.time - lastProjectile > projectileCooldown)
         {
             projectileBool = true;
-            spriteRenderer.color = Color.red;
+            spriteRenderer.color = new Color(1.0f, 0.0f, 0.0f, 0.8f);
 
         }
         
@@ -51,7 +51,7 @@ public class Weapon : Collidable
                 lastProjectile = Time.time;
                 projectileBool = false;
                 SpecialSwing();
-                spriteRenderer.color = Color.white;
+                spriteRenderer.color = new Color(1.0f, 1.0f, 1.0f, 0.8f);
             } 
             else if (Time.time - lastSwing > swingCooldown)
             {

@@ -31,9 +31,9 @@ public abstract class Mover : Fighter
         if (GameManager.instance.player.holdingCrate == false)
         {
             if (moveDelta.x < 0)
-                transform.localScale = Vector3.one;
-            else if (moveDelta.x > 0)
                 transform.localScale = new Vector3(-1, 1, 1);
+            else if (moveDelta.x > 0)
+                transform.localScale = Vector3.one;
         }
 
 

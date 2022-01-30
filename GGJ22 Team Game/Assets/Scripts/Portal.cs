@@ -5,12 +5,13 @@ using UnityEngine;
 public class Portal : Collidable
 {
     public string[] sceneNames;
+    public int sceneNumber;
     protected override void OnCollide(Collider2D coll)
     {
         if (coll.name == "Player"){
             // Teleport the player
-            GameManager.instance.SaveState();
-            string sceneName = sceneNames[0];
+            // GameManager.instance.SaveState();
+            string sceneName = sceneNames[sceneNumber];
             UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
         }
 
