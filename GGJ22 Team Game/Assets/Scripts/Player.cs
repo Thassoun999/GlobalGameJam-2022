@@ -88,7 +88,7 @@ public class Player : Mover
                     origin = this.transform.position,
                     pushForce = 0.0f,
                 };
-                this.SendMessage("ReceiveDamage", dmg);
+                this.SendMessage("ReceiveDamage", dmg, 0);
             }
         }
 
