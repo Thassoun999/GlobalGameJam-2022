@@ -1,13 +1,29 @@
 Event	ID	Name			Wwise Object Path	Notes
-	423282211	Play_Sword_Player			\Default Work Unit\Play_Sword_Player	
-	3044539581	Play_Footsteps_Player			\Default Work Unit\Play_Footsteps_Player	
+	184164629	Play_Portal_To_Dark_Player			\Default Work Unit\PlayerSfx\Play_Portal_To_Dark_Player	
+	357306552	Play_Pickup_Item_Player			\Default Work Unit\PlayerSfx\Play_Pickup_Item_Player	
+	423282211	Play_Sword_Player			\Default Work Unit\PlayerSfx\Play_Sword_Player	
+	620698609	Play_Sword_Charge_Swing_Player			\Default Work Unit\PlayerSfx\Play_Sword_Charge_Swing_Player	
+	1916480607	Play_Portal_To_Light_Player			\Default Work Unit\PlayerSfx\Play_Portal_To_Light_Player	
+	2028524334	Play_Grab_Box_Player			\Default Work Unit\PlayerSfx\Play_Grab_Box_Player	
+	2982529553	Play_Pickup_Health_Player			\Default Work Unit\PlayerSfx\Play_Pickup_Health_Player	
+	3044539581	Play_Footsteps_Player			\Default Work Unit\PlayerSfx\Play_Footsteps_Player	
+	3411544435	Play_Take_Damage_Player			\Default Work Unit\PlayerSfx\Play_Take_Damage_Player	
+	3799651964	Play_Sword_Charge_Ready_Player			\Default Work Unit\PlayerSfx\Play_Sword_Charge_Ready_Player	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	27666835	sword_swing_04	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\sword_swing_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sword_Player\sword_swing_04		29384
-	89012016	footstep_hard_04	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\footstep_hard_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Player\footstep_hard_04		24064
-	136999459	footstep_hard_02	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\footstep_hard_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Player\footstep_hard_02		24064
-	324952742	footstep_hard_01	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\footstep_hard_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Player\footstep_hard_01		96064
-	459864622	sword_swing_01	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\sword_swing_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sword_Player\sword_swing_01		31468
-	674539620	sword_swing_02	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\sword_swing_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sword_Player\sword_swing_02		32108
-	911419203	sword_swing_03	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\sword_swing_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sword_Player\sword_swing_03		33588
+	27666835	sword_swing_04	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\sword_swing_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSfx\Sword_Player\sword_swing_04		29384
+	89012016	footstep_hard_04	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\footstep_hard_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSfx\Footsteps_Player\footstep_hard_04		24064
+	110460746	take_damage_player	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\take_damage_player_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSfx\take_damage_player		159728
+	136999459	footstep_hard_02	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\footstep_hard_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSfx\Footsteps_Player\footstep_hard_02		24064
+	186866395	pickup_health	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\pickup_health_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSfx\pickup_health		192064
+	324952742	footstep_hard_01	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\footstep_hard_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSfx\Footsteps_Player\footstep_hard_01		96064
+	404843036	portal_to_light	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\portal_to_light_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSfx\portal_to_light		121608
+	416111781	sword_charge_ready	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\sword_charge_ready_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSfx\sword_charge_ready		120064
+	428432301	grab_box	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\grab_box_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSfx\grab_box		24064
+	459864622	sword_swing_01	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\sword_swing_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSfx\Sword_Player\sword_swing_01		31468
+	674539620	sword_swing_02	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\sword_swing_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSfx\Sword_Player\sword_swing_02		32108
+	679882462	pickup_item	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\pickup_item_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSfx\pickup_item		183080
+	748774443	portal_to_dark	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\portal_to_dark_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSfx\portal_to_dark		121608
+	911419203	sword_swing_03	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\sword_swing_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSfx\Sword_Player\sword_swing_03		33588
+	977011775	sword_charge_swing	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\sword_charge_swing_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSfx\Sword_Charge_Swing\sword_charge_swing		96064
 

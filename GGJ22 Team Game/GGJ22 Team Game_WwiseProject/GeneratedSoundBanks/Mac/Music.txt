@@ -1,7 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2404684705	Entry_Theme			\Music\Entry_Theme	
+	2227011225	Zero_Theme			\Music\Zero_Theme	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	284669045	music-loop-01-head	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\music-loop-01-head_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Entry_Theme\music-loop-01-head\music-loop-01-head		7680064
-	1001286801	music-loop-01-mainloop	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\music-loop-01-mainloop_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Entry_Theme\music-loop-01-mainloop\music-loop-01-mainloop		7680064
+	284669045	music-loop-01-head	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\music-loop-01-head_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Zero_Theme\music-loop-01-head\music-loop-01-head		7680064
+	1001286801	music-loop-01-mainloop	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\music-loop-01-mainloop_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Zero_Theme\music-loop-01-mainloop\music-loop-01-mainloop		7680064
 

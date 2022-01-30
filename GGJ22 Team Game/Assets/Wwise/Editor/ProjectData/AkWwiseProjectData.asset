@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: e3a874ba47187443bb51ee4b03d8792a
     GuidInternal: 
-    m_lastTime: -8585582067052855899
+    m_lastTime: -8585581089836694957
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: cd9434ea98afba4bb58f7f868659e896
     GuidInternal: 
-    m_lastTime: -8585582067054796336
+    m_lastTime: -8585581089841184890
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 02b2083cbba1a040baabe1dd025d00aa
     GuidInternal: 
-    m_lastTime: -8585581073627907216
+    m_lastTime: -8585580540442221501
     List:
     - name: EnemySfx
       guid: 70442690d0721143af3f8f74f57e3ccc
@@ -82,6 +82,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 70442690d0721143af3f8f74f57e3ccc
       Path: SoundBanks\Default Work Unit\EnemySfx
+    - name: EnvSfx
+      guid: c953158708aac3419442b5842ebb73f0
+      id: 1794843847
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 02b2083cbba1a040baabe1dd025d00aa
+      - ElementName: EnvSfx
+        ObjectType: 7
+        guid: c953158708aac3419442b5842ebb73f0
+      Path: SoundBanks\Default Work Unit\EnvSfx
     - name: Music
       guid: 1e2fe3676f73054bb46cb18657af3a38
       id: 3991942870
@@ -122,8 +136,122 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: b1e279512870f84fb33171e05b9ca636
     GuidInternal: 
-    m_lastTime: -8585581073628187280
+    m_lastTime: -8585580540442570897
     List:
+    - name: EnemySfx
+      guid: 7ecdc17378cb954891d14bdaba838563
+      id: 406817756
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: EnemySfx
+        ObjectType: 4
+        guid: 7ecdc17378cb954891d14bdaba838563
+      Path: Events\Default Work Unit\EnemySfx
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EnvSfx
+      guid: 511e5c32ef8dcc4588255cf7ea36c546
+      id: 1794843847
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: EnvSfx
+        ObjectType: 4
+        guid: 511e5c32ef8dcc4588255cf7ea36c546
+      Path: Events\Default Work Unit\EnvSfx
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Box_Drag_Env
+      guid: 54ebfcf3e52b8e43ae0ca6353589072b
+      id: 2979191818
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: EnvSfx
+        ObjectType: 4
+        guid: 511e5c32ef8dcc4588255cf7ea36c546
+      - ElementName: Play_Box_Drag_Env
+        ObjectType: 3
+        guid: 54ebfcf3e52b8e43ae0ca6353589072b
+      Path: Events\Default Work Unit\EnvSfx\Play_Box_Drag_Env
+      maxAttenuation: 3
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Death_Enemy
+      guid: 5eb93d4a6e7142448bb5ac3445cb5de3
+      id: 589308837
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: EnemySfx
+        ObjectType: 4
+        guid: 7ecdc17378cb954891d14bdaba838563
+      - ElementName: Play_Death_Enemy
+        ObjectType: 3
+        guid: 5eb93d4a6e7142448bb5ac3445cb5de3
+      Path: Events\Default Work Unit\EnemySfx\Play_Death_Enemy
+      maxAttenuation: 0
+      maxDuration: 1.125
+      minDuration: 1.125
+    - name: Play_Door_Close_Env
+      guid: 89ab82ed0a5676428308bdc09dc8574e
+      id: 820567787
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: EnvSfx
+        ObjectType: 4
+        guid: 511e5c32ef8dcc4588255cf7ea36c546
+      - ElementName: Play_Door_Close_Env
+        ObjectType: 3
+        guid: 89ab82ed0a5676428308bdc09dc8574e
+      Path: Events\Default Work Unit\EnvSfx\Play_Door_Close_Env
+      maxAttenuation: 4
+      maxDuration: 2
+      minDuration: 2
+    - name: Play_Door_Open_Env
+      guid: 6d7b4b81876e3c429d21c732a2693e9e
+      id: 1270635665
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: EnvSfx
+        ObjectType: 4
+        guid: 511e5c32ef8dcc4588255cf7ea36c546
+      - ElementName: Play_Door_Open_Env
+        ObjectType: 3
+        guid: 6d7b4b81876e3c429d21c732a2693e9e
+      Path: Events\Default Work Unit\EnvSfx\Play_Door_Open_Env
+      maxAttenuation: 0
+      maxDuration: 2
+      minDuration: 2
     - name: Play_Footsteps_Enemy
       guid: c6c0b25291228245a300e67be6adbd8c
       id: 3124083878
@@ -134,11 +262,14 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: EnemySfx
+        ObjectType: 4
+        guid: 7ecdc17378cb954891d14bdaba838563
       - ElementName: Play_Footsteps_Enemy
         ObjectType: 3
         guid: c6c0b25291228245a300e67be6adbd8c
-      Path: Events\Default Work Unit\Play_Footsteps_Enemy
-      maxAttenuation: 5
+      Path: Events\Default Work Unit\EnemySfx\Play_Footsteps_Enemy
+      maxAttenuation: 4
       maxDuration: 0.5
       minDuration: 0.5
     - name: Play_Footsteps_Player
@@ -151,13 +282,256 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: PlayerSfx
+        ObjectType: 4
+        guid: c6a229aa2c9ba44fb561a408329c34aa
       - ElementName: Play_Footsteps_Player
         ObjectType: 3
         guid: 02b9a3e7fcb46d439335764b0c807c5f
-      Path: Events\Default Work Unit\Play_Footsteps_Player
+      Path: Events\Default Work Unit\PlayerSfx\Play_Footsteps_Player
       maxAttenuation: 0
       maxDuration: 0.5
       minDuration: 0.125
+    - name: Play_Grab_Box_Player
+      guid: 2c19202073d122428cdb3cae853b64d9
+      id: 2028524334
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: PlayerSfx
+        ObjectType: 4
+        guid: c6a229aa2c9ba44fb561a408329c34aa
+      - ElementName: Play_Grab_Box_Player
+        ObjectType: 3
+        guid: 2c19202073d122428cdb3cae853b64d9
+      Path: Events\Default Work Unit\PlayerSfx\Play_Grab_Box_Player
+      maxAttenuation: 0
+      maxDuration: 0.125
+      minDuration: 0.125
+    - name: Play_Pickup_Health_Player
+      guid: 10197f0b4f3a6945a5204ee0b99e3f3b
+      id: 2982529553
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: PlayerSfx
+        ObjectType: 4
+        guid: c6a229aa2c9ba44fb561a408329c34aa
+      - ElementName: Play_Pickup_Health_Player
+        ObjectType: 3
+        guid: 10197f0b4f3a6945a5204ee0b99e3f3b
+      Path: Events\Default Work Unit\PlayerSfx\Play_Pickup_Health_Player
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
+    - name: Play_Pickup_Item_Player
+      guid: a20c61ea18722e4e9e3eaea7e4cf737d
+      id: 357306552
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: PlayerSfx
+        ObjectType: 4
+        guid: c6a229aa2c9ba44fb561a408329c34aa
+      - ElementName: Play_Pickup_Item_Player
+        ObjectType: 3
+        guid: a20c61ea18722e4e9e3eaea7e4cf737d
+      Path: Events\Default Work Unit\PlayerSfx\Play_Pickup_Item_Player
+      maxAttenuation: 0
+      maxDuration: 0.953208
+      minDuration: 0.953208
+    - name: Play_Portal_To_Dark_Player
+      guid: e4977d6ea2f411408d429519138bad8a
+      id: 184164629
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: PlayerSfx
+        ObjectType: 4
+        guid: c6a229aa2c9ba44fb561a408329c34aa
+      - ElementName: Play_Portal_To_Dark_Player
+        ObjectType: 3
+        guid: e4977d6ea2f411408d429519138bad8a
+      Path: Events\Default Work Unit\PlayerSfx\Play_Portal_To_Dark_Player
+      maxAttenuation: 0
+      maxDuration: 0.633042
+      minDuration: 0.633042
+    - name: Play_Portal_To_Light_Player
+      guid: 9f4ea3001600624684dbd79273a70ba8
+      id: 1916480607
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: PlayerSfx
+        ObjectType: 4
+        guid: c6a229aa2c9ba44fb561a408329c34aa
+      - ElementName: Play_Portal_To_Light_Player
+        ObjectType: 3
+        guid: 9f4ea3001600624684dbd79273a70ba8
+      Path: Events\Default Work Unit\PlayerSfx\Play_Portal_To_Light_Player
+      maxAttenuation: 0
+      maxDuration: 0.633042
+      minDuration: 0.633042
+    - name: Play_Projectile_Fly_Env
+      guid: dfe8fc7ad850ea448adffa4d11c8fa0b
+      id: 771295557
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: EnvSfx
+        ObjectType: 4
+        guid: 511e5c32ef8dcc4588255cf7ea36c546
+      - ElementName: Play_Projectile_Fly_Env
+        ObjectType: 3
+        guid: dfe8fc7ad850ea448adffa4d11c8fa0b
+      Path: Events\Default Work Unit\EnvSfx\Play_Projectile_Fly_Env
+      maxAttenuation: 0
+      maxDuration: 3.5
+      minDuration: 3.5
+    - name: Play_Projectile_Hit_Env
+      guid: 9220087be32bbf4f84eae6b9b51bb9c4
+      id: 1781223061
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: EnvSfx
+        ObjectType: 4
+        guid: 511e5c32ef8dcc4588255cf7ea36c546
+      - ElementName: Play_Projectile_Hit_Env
+        ObjectType: 3
+        guid: 9220087be32bbf4f84eae6b9b51bb9c4
+      Path: Events\Default Work Unit\EnvSfx\Play_Projectile_Hit_Env
+      maxAttenuation: 0
+      maxDuration: 0.5
+      minDuration: 0.5
+    - name: Play_Shout_L_Enemy
+      guid: 5baa6faaaf9bd843a4c36ea0aa058773
+      id: 4269470325
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: EnemySfx
+        ObjectType: 4
+        guid: 7ecdc17378cb954891d14bdaba838563
+      - ElementName: Play_Shout_L_Enemy
+        ObjectType: 3
+        guid: 5baa6faaaf9bd843a4c36ea0aa058773
+      Path: Events\Default Work Unit\EnemySfx\Play_Shout_L_Enemy
+      maxAttenuation: 4
+      maxDuration: 3.2905
+      minDuration: 2.283979
+    - name: Play_Shout_S_Enemy
+      guid: a604ed3ea48c4c4fb8f794766edfecbb
+      id: 3082387274
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: EnemySfx
+        ObjectType: 4
+        guid: 7ecdc17378cb954891d14bdaba838563
+      - ElementName: Play_Shout_S_Enemy
+        ObjectType: 3
+        guid: a604ed3ea48c4c4fb8f794766edfecbb
+      Path: Events\Default Work Unit\EnemySfx\Play_Shout_S_Enemy
+      maxAttenuation: 4
+      maxDuration: 2.283979
+      minDuration: 1.5
+    - name: Play_Switch_Flip_Env
+      guid: de88bdd2b00973419986cfc733ebb79c
+      id: 800496276
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: EnvSfx
+        ObjectType: 4
+        guid: 511e5c32ef8dcc4588255cf7ea36c546
+      - ElementName: Play_Switch_Flip_Env
+        ObjectType: 3
+        guid: de88bdd2b00973419986cfc733ebb79c
+      Path: Events\Default Work Unit\EnvSfx\Play_Switch_Flip_Env
+      maxAttenuation: 4
+      maxDuration: 0.5
+      minDuration: 0.5
+    - name: Play_Sword_Charge_Ready_Player
+      guid: f407128ec3e4d642abb1df5880fe7ef1
+      id: 3799651964
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: PlayerSfx
+        ObjectType: 4
+        guid: c6a229aa2c9ba44fb561a408329c34aa
+      - ElementName: Play_Sword_Charge_Ready_Player
+        ObjectType: 3
+        guid: f407128ec3e4d642abb1df5880fe7ef1
+      Path: Events\Default Work Unit\PlayerSfx\Play_Sword_Charge_Ready_Player
+      maxAttenuation: 0
+      maxDuration: 0.625
+      minDuration: 0.625
+    - name: Play_Sword_Charge_Swing_Player
+      guid: b580ef2c167db1468ae582b7fe835e40
+      id: 620698609
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: PlayerSfx
+        ObjectType: 4
+        guid: c6a229aa2c9ba44fb561a408329c34aa
+      - ElementName: Play_Sword_Charge_Swing_Player
+        ObjectType: 3
+        guid: b580ef2c167db1468ae582b7fe835e40
+      Path: Events\Default Work Unit\PlayerSfx\Play_Sword_Charge_Swing_Player
+      maxAttenuation: 0
+      maxDuration: 0.5
+      minDuration: 0.5
     - name: Play_Sword_Player
       guid: 8d2b58a425fddc429138da93c79dd447
       id: 423282211
@@ -168,13 +542,93 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: PlayerSfx
+        ObjectType: 4
+        guid: c6a229aa2c9ba44fb561a408329c34aa
       - ElementName: Play_Sword_Player
         ObjectType: 3
         guid: 8d2b58a425fddc429138da93c79dd447
-      Path: Events\Default Work Unit\Play_Sword_Player
+      Path: Events\Default Work Unit\PlayerSfx\Play_Sword_Player
       maxAttenuation: 0
       maxDuration: 0.174604
       minDuration: 0.152708
+    - name: Play_Take_Damage_Enemy
+      guid: 6b9195b5429c7045a9d7361251f59832
+      id: 343234584
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: EnemySfx
+        ObjectType: 4
+        guid: 7ecdc17378cb954891d14bdaba838563
+      - ElementName: Play_Take_Damage_Enemy
+        ObjectType: 3
+        guid: 6b9195b5429c7045a9d7361251f59832
+      Path: Events\Default Work Unit\EnemySfx\Play_Take_Damage_Enemy
+      maxAttenuation: 4
+      maxDuration: 0.831583
+      minDuration: 0.831583
+    - name: Play_Take_Damage_Player
+      guid: f6b1a312c7aae84c860955c1a67ef5ee
+      id: 3411544435
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: PlayerSfx
+        ObjectType: 4
+        guid: c6a229aa2c9ba44fb561a408329c34aa
+      - ElementName: Play_Take_Damage_Player
+        ObjectType: 3
+        guid: f6b1a312c7aae84c860955c1a67ef5ee
+      Path: Events\Default Work Unit\PlayerSfx\Play_Take_Damage_Player
+      maxAttenuation: 0
+      maxDuration: 0.831583
+      minDuration: 0.831583
+    - name: PlayerSfx
+      guid: c6a229aa2c9ba44fb561a408329c34aa
+      id: 4283257371
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: PlayerSfx
+        ObjectType: 4
+        guid: c6a229aa2c9ba44fb561a408329c34aa
+      Path: Events\Default Work Unit\PlayerSfx
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Box_Drag_Env
+      guid: 7a001f6228ed3b41b326628c062b8a17
+      id: 326667744
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1e279512870f84fb33171e05b9ca636
+      - ElementName: EnvSfx
+        ObjectType: 4
+        guid: 511e5c32ef8dcc4588255cf7ea36c546
+      - ElementName: Stop_Box_Drag_Env
+        ObjectType: 3
+        guid: 7a001f6228ed3b41b326628c062b8a17
+      Path: Events\Default Work Unit\EnvSfx\Stop_Box_Drag_Env
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Music.wwu
     PathAndIcons:
     - ElementName: Events
@@ -186,11 +640,11 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: 1579479ec74c1545ab665017a79f3f72
     GuidInternal: 
-    m_lastTime: -8585582067057296888
+    m_lastTime: -8585580605604727679
     List:
-    - name: Entry_Theme
+    - name: Zero_Theme
       guid: 22cce93658d79f4db18685f2d7ba9a9f
-      id: 2404684705
+      id: 2227011225
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -198,10 +652,10 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 12
         guid: 1579479ec74c1545ab665017a79f3f72
-      - ElementName: Entry_Theme
+      - ElementName: Zero_Theme
         ObjectType: 3
         guid: 22cce93658d79f4db18685f2d7ba9a9f
-      Path: Events\Music\Entry_Theme
+      Path: Events\Music\Zero_Theme
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -217,7 +671,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 56b1788ab85b9f4590facde5337522dc
     GuidInternal: 
-    m_lastTime: -8585582067057256901
+    m_lastTime: -8585580875725338706
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -231,7 +685,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 1837a4d01c783940b46b12d9bdb2a91e
     GuidInternal: 
-    m_lastTime: -8585582067052865900
+    m_lastTime: -8585581089836734847
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -245,7 +699,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 9ec52069e7f8f94ab7c5c10de0aa5cd7
     GuidInternal: 
-    m_lastTime: -8585582067052865900
+    m_lastTime: -8585581089836724872
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -259,10 +713,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 17075a0b101c3b4a8a7c2330252bd06d
     GuidInternal: 
-    m_lastTime: -8585582067052855899
+    m_lastTime: -8585580875725298832
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 06000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -11,12 +11,20 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="406817756" Language="SFX" Hash="313808866">
+		<SoundBank Id="406817756" Language="SFX" Hash="708078985">
 			<ObjectPath>\SoundBanks\Default Work Unit\EnemySfx</ObjectPath>
 			<ShortName>EnemySfx</ShortName>
 			<Path>EnemySfx.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3124083878" Name="Play_Footsteps_Enemy" ObjectPath="\Events\Default Work Unit\Play_Footsteps_Enemy" MaxAttenuation="5." DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+				<Event Id="589308837" Name="Play_Death_Enemy" ObjectPath="\Events\Default Work Unit\EnemySfx\Play_Death_Enemy" DurationType="OneShot" DurationMin="1.125" DurationMax="1.125">
+					<IncludedMemoryFiles>
+						<File Id="1065551191" Language="SFX">
+							<ShortName>death_enemy.wav</ShortName>
+							<Path>SFX\death_enemy_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3124083878" Name="Play_Footsteps_Enemy" ObjectPath="\Events\Default Work Unit\EnemySfx\Play_Footsteps_Enemy" MaxAttenuation="4." DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<IncludedMemoryFiles>
 						<File Id="121471041" Language="SFX">
 							<ShortName>footstep_enemy_01.wav</ShortName>
@@ -52,19 +60,131 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="4269470325" Name="Play_Shout_L_Enemy" ObjectPath="\Events\Default Work Unit\EnemySfx\Play_Shout_L_Enemy" MaxAttenuation="4." DurationType="OneShot" DurationMin="2.283979" DurationMax="3.2905">
+					<IncludedMemoryFiles>
+						<File Id="139640123" Language="SFX">
+							<ShortName>vocal03_lg_enemy.wav</ShortName>
+							<Path>SFX\vocal03_lg_enemy_10C4C929.wem</Path>
+						</File>
+						<File Id="519706623" Language="SFX">
+							<ShortName>vocal01_lg_enemy.wav</ShortName>
+							<Path>SFX\vocal01_lg_enemy_10C4C929.wem</Path>
+						</File>
+						<File Id="582167837" Language="SFX">
+							<ShortName>vocal02_lg_enemy.wav</ShortName>
+							<Path>SFX\vocal02_lg_enemy_10C4C929.wem</Path>
+						</File>
+						<File Id="690349220" Language="SFX">
+							<ShortName>vocal00_lg_enemy.wav</ShortName>
+							<Path>SFX\vocal00_lg_enemy_10C4C929.wem</Path>
+						</File>
+						<File Id="876208911" Language="SFX">
+							<ShortName>vocal05_lg_enemy.wav</ShortName>
+							<Path>SFX\vocal05_lg_enemy_10C4C929.wem</Path>
+						</File>
+						<File Id="1047682843" Language="SFX">
+							<ShortName>vocal04_lg_enemy.wav</ShortName>
+							<Path>SFX\vocal04_lg_enemy_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3082387274" Name="Play_Shout_S_Enemy" ObjectPath="\Events\Default Work Unit\EnemySfx\Play_Shout_S_Enemy" MaxAttenuation="4." DurationType="OneShot" DurationMin="1.5" DurationMax="2.283979">
+					<IncludedMemoryFiles>
+						<File Id="342411281" Language="SFX">
+							<ShortName>vocal00_sm_enemy.wav</ShortName>
+							<Path>SFX\vocal00_sm_enemy_10C4C929.wem</Path>
+						</File>
+						<File Id="396860089" Language="SFX">
+							<ShortName>vocal01_sm_enemy.wav</ShortName>
+							<Path>SFX\vocal01_sm_enemy_10C4C929.wem</Path>
+						</File>
+						<File Id="752271346" Language="SFX">
+							<ShortName>vocal02_sm_enemy.wav</ShortName>
+							<Path>SFX\vocal02_sm_enemy_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="343234584" Name="Play_Take_Damage_Enemy" ObjectPath="\Events\Default Work Unit\EnemySfx\Play_Take_Damage_Enemy" MaxAttenuation="4." DurationType="OneShot" DurationMin="0.831583" DurationMax="0.831583">
+					<IncludedMemoryFiles>
+						<File Id="684410318" Language="SFX">
+							<ShortName>take_damage_enemy.wav</ShortName>
+							<Path>SFX\take_damage_enemy_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2746513014">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2024467079">
+		<SoundBank Id="1794843847" Language="SFX" Hash="159412100">
+			<ObjectPath>\SoundBanks\Default Work Unit\EnvSfx</ObjectPath>
+			<ShortName>EnvSfx</ShortName>
+			<Path>EnvSfx.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2979191818" Name="Play_Box_Drag_Env" ObjectPath="\Events\Default Work Unit\EnvSfx\Play_Box_Drag_Env" MaxAttenuation="3." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="385437156" Language="SFX">
+							<ShortName>box_drag_loop.wav</ShortName>
+							<Path>SFX\box_drag_loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="519370499" Language="SFX">
+							<ShortName>box_drag_head.wav</ShortName>
+							<Path>SFX\box_drag_head_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="820567787" Name="Play_Door_Close_Env" ObjectPath="\Events\Default Work Unit\EnvSfx\Play_Door_Close_Env" MaxAttenuation="4." DurationType="OneShot" DurationMin="2." DurationMax="2.">
+					<IncludedMemoryFiles>
+						<File Id="637236332" Language="SFX">
+							<ShortName>door_close.wav</ShortName>
+							<Path>SFX\door_close_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1270635665" Name="Play_Door_Open_Env" ObjectPath="\Events\Default Work Unit\EnvSfx\Play_Door_Open_Env" DurationType="OneShot" DurationMin="2." DurationMax="2.">
+					<IncludedMemoryFiles>
+						<File Id="979488128" Language="SFX">
+							<ShortName>door_open.wav</ShortName>
+							<Path>SFX\door_open_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="771295557" Name="Play_Projectile_Fly_Env" ObjectPath="\Events\Default Work Unit\EnvSfx\Play_Projectile_Fly_Env" DurationType="OneShot" DurationMin="3.5" DurationMax="3.5">
+					<IncludedMemoryFiles>
+						<File Id="848853524" Language="SFX">
+							<ShortName>projectile_fly.wav</ShortName>
+							<Path>SFX\projectile_fly_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1781223061" Name="Play_Projectile_Hit_Env" ObjectPath="\Events\Default Work Unit\EnvSfx\Play_Projectile_Hit_Env" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="1007310407" Language="SFX">
+							<ShortName>projectile_hit.wav</ShortName>
+							<Path>SFX\projectile_hit_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="800496276" Name="Play_Switch_Flip_Env" ObjectPath="\Events\Default Work Unit\EnvSfx\Play_Switch_Flip_Env" MaxAttenuation="4." DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<IncludedMemoryFiles>
+						<File Id="762709533" Language="SFX">
+							<ShortName>switch_flip.wav</ShortName>
+							<Path>SFX\switch_flip_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="326667744" Name="Stop_Box_Drag_Env" ObjectPath="\Events\Default Work Unit\EnvSfx\Stop_Box_Drag_Env" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX" Hash="3456137280">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2404684705" Name="Entry_Theme" ObjectPath="\Events\Music\Entry_Theme" DurationType="Infinite">
+				<Event Id="2227011225" Name="Zero_Theme" ObjectPath="\Events\Music\Zero_Theme" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="284669045" Language="SFX">
 							<ShortName>music-loop-01-head.wav</ShortName>
@@ -78,12 +198,12 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="4283257371" Language="SFX" Hash="3753696853">
+		<SoundBank Id="4283257371" Language="SFX" Hash="3545322923">
 			<ObjectPath>\SoundBanks\Default Work Unit\PlayerSfx</ObjectPath>
 			<ShortName>PlayerSfx</ShortName>
 			<Path>PlayerSfx.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3044539581" Name="Play_Footsteps_Player" ObjectPath="\Events\Default Work Unit\Play_Footsteps_Player" DurationType="OneShot" DurationMin="0.125" DurationMax="0.5">
+				<Event Id="3044539581" Name="Play_Footsteps_Player" ObjectPath="\Events\Default Work Unit\PlayerSfx\Play_Footsteps_Player" DurationType="OneShot" DurationMin="0.125" DurationMax="0.5">
 					<IncludedMemoryFiles>
 						<File Id="89012016" Language="SFX">
 							<ShortName>footstep_hard_04.wav</ShortName>
@@ -99,7 +219,55 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="423282211" Name="Play_Sword_Player" ObjectPath="\Events\Default Work Unit\Play_Sword_Player" DurationType="OneShot" DurationMin="0.152708" DurationMax="0.174604">
+				<Event Id="2028524334" Name="Play_Grab_Box_Player" ObjectPath="\Events\Default Work Unit\PlayerSfx\Play_Grab_Box_Player" DurationType="OneShot" DurationMin="0.125" DurationMax="0.125">
+					<IncludedMemoryFiles>
+						<File Id="428432301" Language="SFX">
+							<ShortName>grab_box.wav</ShortName>
+							<Path>SFX\grab_box_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2982529553" Name="Play_Pickup_Health_Player" ObjectPath="\Events\Default Work Unit\PlayerSfx\Play_Pickup_Health_Player" DurationType="OneShot" DurationMin="1." DurationMax="1.">
+					<IncludedMemoryFiles>
+						<File Id="186866395" Language="SFX">
+							<ShortName>pickup_health.wav</ShortName>
+							<Path>SFX\pickup_health_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="357306552" Name="Play_Pickup_Item_Player" ObjectPath="\Events\Default Work Unit\PlayerSfx\Play_Pickup_Item_Player" DurationType="OneShot" DurationMin="0.953208" DurationMax="0.953208">
+					<IncludedMemoryFiles>
+						<File Id="679882462" Language="SFX">
+							<ShortName>pickup_item.wav</ShortName>
+							<Path>SFX\pickup_item_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="184164629" Name="Play_Portal_To_Dark_Player" ObjectPath="\Events\Default Work Unit\PlayerSfx\Play_Portal_To_Dark_Player" DurationType="OneShot" DurationMin="0.633042" DurationMax="0.633042">
+					<IncludedMemoryFiles>
+						<File Id="748774443" Language="SFX">
+							<ShortName>portal_to_dark.wav</ShortName>
+							<Path>SFX\portal_to_dark_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1916480607" Name="Play_Portal_To_Light_Player" ObjectPath="\Events\Default Work Unit\PlayerSfx\Play_Portal_To_Light_Player" DurationType="OneShot" DurationMin="0.633042" DurationMax="0.633042">
+					<IncludedMemoryFiles>
+						<File Id="404843036" Language="SFX">
+							<ShortName>portal_to_light.wav</ShortName>
+							<Path>SFX\portal_to_light_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3799651964" Name="Play_Sword_Charge_Ready_Player" ObjectPath="\Events\Default Work Unit\PlayerSfx\Play_Sword_Charge_Ready_Player" DurationType="OneShot" DurationMin="0.625" DurationMax="0.625">
+					<IncludedMemoryFiles>
+						<File Id="416111781" Language="SFX">
+							<ShortName>sword_charge_ready.wav</ShortName>
+							<Path>SFX\sword_charge_ready_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="620698609" Name="Play_Sword_Charge_Swing_Player" ObjectPath="\Events\Default Work Unit\PlayerSfx\Play_Sword_Charge_Swing_Player" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<IncludedMemoryFiles>
 						<File Id="27666835" Language="SFX">
 							<ShortName>sword_swing_04.wav</ShortName>
@@ -116,6 +284,38 @@
 						<File Id="911419203" Language="SFX">
 							<ShortName>sword_swing_03.wav</ShortName>
 							<Path>SFX\sword_swing_03_10C4C929.wem</Path>
+						</File>
+						<File Id="977011775" Language="SFX">
+							<ShortName>sword_charge_swing.wav</ShortName>
+							<Path>SFX\sword_charge_swing_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="423282211" Name="Play_Sword_Player" ObjectPath="\Events\Default Work Unit\PlayerSfx\Play_Sword_Player" DurationType="OneShot" DurationMin="0.152708" DurationMax="0.174604">
+					<IncludedMemoryFiles>
+						<File Id="27666835" Language="SFX">
+							<ShortName>sword_swing_04.wav</ShortName>
+							<Path>SFX\sword_swing_04_10C4C929.wem</Path>
+						</File>
+						<File Id="459864622" Language="SFX">
+							<ShortName>sword_swing_01.wav</ShortName>
+							<Path>SFX\sword_swing_01_10C4C929.wem</Path>
+						</File>
+						<File Id="674539620" Language="SFX">
+							<ShortName>sword_swing_02.wav</ShortName>
+							<Path>SFX\sword_swing_02_10C4C929.wem</Path>
+						</File>
+						<File Id="911419203" Language="SFX">
+							<ShortName>sword_swing_03.wav</ShortName>
+							<Path>SFX\sword_swing_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3411544435" Name="Play_Take_Damage_Player" ObjectPath="\Events\Default Work Unit\PlayerSfx\Play_Take_Damage_Player" DurationType="OneShot" DurationMin="0.831583" DurationMax="0.831583">
+					<IncludedMemoryFiles>
+						<File Id="110460746" Language="SFX">
+							<ShortName>take_damage_player.wav</ShortName>
+							<Path>SFX\take_damage_player_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -1,0 +1,18 @@
+Event	ID	Name			Wwise Object Path	Notes
+	326667744	Stop_Box_Drag_Env			\Default Work Unit\EnvSfx\Stop_Box_Drag_Env	
+	771295557	Play_Projectile_Fly_Env			\Default Work Unit\EnvSfx\Play_Projectile_Fly_Env	
+	800496276	Play_Switch_Flip_Env			\Default Work Unit\EnvSfx\Play_Switch_Flip_Env	
+	820567787	Play_Door_Close_Env			\Default Work Unit\EnvSfx\Play_Door_Close_Env	
+	1270635665	Play_Door_Open_Env			\Default Work Unit\EnvSfx\Play_Door_Open_Env	
+	1781223061	Play_Projectile_Hit_Env			\Default Work Unit\EnvSfx\Play_Projectile_Hit_Env	
+	2979191818	Play_Box_Drag_Env			\Default Work Unit\EnvSfx\Play_Box_Drag_Env	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	385437156	box_drag_loop	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\box_drag_loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnvSfx\Box_Drag\box_drag_loop		58772
+	519370499	box_drag_head	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\box_drag_head_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnvSfx\Box_Drag\box_drag_head		84924
+	637236332	door_close	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\door_close_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnvSfx\door_close		192064
+	762709533	switch_flip	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\switch_flip_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnvSfx\switch_flip		96064
+	848853524	projectile_fly	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\projectile_fly_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnvSfx\projectile_fly		336064
+	979488128	door_open	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\door_open_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnvSfx\door_open		192064
+	1007310407	projectile_hit	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Mac\SFX\projectile_hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnvSfx\projectile_hit		48064
+
