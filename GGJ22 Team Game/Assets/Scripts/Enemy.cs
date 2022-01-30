@@ -114,7 +114,7 @@ public class Enemy : Mover
         Instantiate(largeVariant, transform.position + new Vector3(10.0f, 0.0f, 0.0f), Quaternion.identity);
         Destroy(gameObject);
         GameManager.instance.experience += xpValue;
-        GameManager.instance.ShowText("+" + xpValue + " exp!", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);
+        // GameManager.instance.ShowText("+" + xpValue + " exp!", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);
 
     }
 }

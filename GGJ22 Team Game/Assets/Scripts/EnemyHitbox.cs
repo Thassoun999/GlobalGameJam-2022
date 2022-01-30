@@ -17,7 +17,8 @@ public class EnemyHitbox : Collidable
             {
                 damageAmount = damagePoint,
                 origin = transform.position,
-                pushForce = pushForce
+                pushForce = pushForce,
+                color = 0
             };
 
             coll.SendMessage("ReceiveDamage", dmg); // Is to be sent to the player / enemy class objects (the method ReceiveDamage needs to be implemented for this to work)

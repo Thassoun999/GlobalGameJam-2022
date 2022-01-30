@@ -7,13 +7,14 @@ using TMPro;
 public class FloatingTextManager : MonoBehaviour
 {
     public GameObject textContainer;
-    public GameObject textPrefab;
+    public GameObject textPrefabNPC;
+    public GameObject textPrefabWorld;
 
     public List<FloatingText> floatingTexts = new List<FloatingText>();
 
-    public void Show(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
+    public void Show(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration, int font)
     {
-        FloatingText floatingText = GetFloatingText();
+        FloatingText floatingText = GetFloatingText(font);
 
         floatingText.txt.text = msg;
         floatingText.txt.fontSize = fontSize;
@@ -26,18 +27,33 @@ public class FloatingTextManager : MonoBehaviour
         floatingText.Show();
     }
 
-    private FloatingText GetFloatingText()
+    private FloatingText GetFloatingText(int i)
     {
         FloatingText txt = floatingTexts.Find(t=> !t.active);
 
-        if (txt == null)
+        if(i == 0)
         {
-            txt = new FloatingText();
-            txt.go = Instantiate(textPrefab);
-            txt.go.transform.SetParent(textContainer.transform);
-            txt.txt = txt.go.GetComponent<TMP_Text>();
+            if (txt == null)
+            {
+                txt = new FloatingText();
+                txt.go = Instantiate(textPrefabNPC);
+                txt.go.transform.SetParent(textContainer.transform);
+                txt.txt = txt.go.GetComponent<TMP_Text>();
 
-            floatingTexts.Add(txt);
+                floatingTexts.Add(txt);
+            }
+        }
+        else if (i == 1)
+        {
+            if (txt == null)
+            {
+                txt = new FloatingText();
+                txt.go = Instantiate(textPrefabWorld);
+                txt.go.transform.SetParent(textContainer.transform);
+                txt.txt = txt.go.GetComponent<TMP_Text>();
+
+                floatingTexts.Add(txt);
+            }
         }
 
         return txt;

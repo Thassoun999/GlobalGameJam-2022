@@ -12,7 +12,7 @@ public class Chest : Collectable
         {
             collected = true;
             GetComponent<SpriteRenderer>().sprite = emptyChest;
-            GameManager.instance.ShowText("+" + coinAmount + " coins!", 25, Color.yellow, transform.position, Vector3.up * 25, 0.5f);
+            GameManager.instance.ShowText("+" + coinAmount + " coins!", 40, Color.yellow, transform.position, Vector3.up * 25, 0.5f, 1);
         }
     }
 }
