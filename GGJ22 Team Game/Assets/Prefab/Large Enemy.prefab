@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 6368235459047196143}
   - component: {fileID: 6368235459047196128}
   - component: {fileID: 3757732248659390035}
+  - component: {fileID: -7314712888521126265}
   m_Layer: 7
   m_Name: Large Enemy
   m_TagString: Fighter
@@ -287,3 +288,22 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+--- !u!95 &-7314712888521126265
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6368235459047196133}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 131f2987708d91d43bb44e2ea7a7e94f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -13,14 +13,11 @@ public class Player : Mover
     private Vector3 savedPositionLight;
     private Vector3 savedPositionDark;
 
-    // Animator Controller
-    private Animator animController; 
+    
 
     protected override void Start()
     {
         base.Start();
-
-        animController = GetComponent<Animator>();
         directionFacing = 1;
         holdingCrate = false;
         worldSwapTimer = 0.0f;
@@ -43,11 +40,6 @@ public class Player : Mover
         {
             directionFacing = 1;
         }
-
-        if(x != 0 || y != 0)
-            animController.SetBool("Walking", true);
-        else
-            animController.SetBool("Walking", false);
 
         UpdateMotor(new Vector3(x, y, 0));
     }
