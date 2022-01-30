@@ -16,7 +16,15 @@ public class DisplaySymbolGroup : MonoBehaviour
 
     private void Update()
     {
-        if(symbolList[0].currCycle == cycleCode[0] && symbolList[1].currCycle == cycleCode[1] && symbolList[2].currCycle == cycleCode[2])
+        bool isCorrect = true;
+
+        for (int i = 0; i < symbolList.Length; i++)
+        {
+            if(symbolList[i].currCycle != cycleCode[i])
+                isCorrect = false;
+        }
+        
+        if(isCorrect)
         {
             doorOpened = true;
         }

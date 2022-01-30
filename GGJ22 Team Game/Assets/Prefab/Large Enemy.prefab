@@ -272,7 +272,7 @@ MonoBehaviour:
   maxHitpoint: 6
   pushRecoveryspeed: 0.2
   xpValue: 3
-  triggerLength: 0.8
+  triggerLength: 1
   chaseLength: 1.5
   filter:
     useTriggers: 0

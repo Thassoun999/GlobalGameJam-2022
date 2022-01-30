@@ -10,7 +10,7 @@ public class DisplaySymbolSingular : MonoBehaviour
 
     private void Start()
     {
-        spriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         currCycle = 0;
     }
     public void Cycle()
