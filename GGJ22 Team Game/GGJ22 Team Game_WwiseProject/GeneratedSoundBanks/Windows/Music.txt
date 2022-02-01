@@ -1,7 +1,19 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2227011225	Zero_Theme			\Music\Zero_Theme	
+	3991942870	Music			\Music\Music	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	474960906	Zero_Light	Music			
+	493110594	Zero_Dark	Music			
+	748895195	None	Music			
+	3439594019	Forest_Light	Music			
+	4125089501	Forest_Dark	Music			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	284669045	music-loop-01-head	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\music-loop-01-head_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Zero_Theme\music-loop-01-head\music-loop-01-head		7680064
-	1001286801	music-loop-01-mainloop	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\music-loop-01-mainloop_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Zero_Theme\music-loop-01-mainloop\music-loop-01-mainloop		7680064
+	48897453	ggj22-risingtension	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\ggj22-risingtension_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music Switch\Forest_Light\ggj22-risingtension\ggj22-risingtension		24137208
+	168320748	ggj22-darkness	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\ggj22-darkness_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music Switch\Forest_Dark\ggj22-darkness\ggj22-darkness		25234352
+	501845554	zerolight	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\zerolight_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music Switch\Zero_Light\zerolight\zerolight		23040064
+	926936736	zerodark	C:\Users\fhisc\OneDrive\Documents\Projects\Unity\GlobalGameJam-2022\GGJ22 Team Game\GGJ22 Team Game_WwiseProject\.cache\Windows\SFX\zerodark_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music Switch\Zero_Dark\zerodark\zerodark		23040064
 

@@ -39,6 +39,7 @@ public class PuzzleSwitchSymbols : Collidable
             symbolChangeTime = 0.0f;
             pressed = true;
             spriteRenderer.sprite = on;
+            AkSoundEngine.PostEvent("Play_Switch_Flip_Env", gameObject);
         }
     }
 

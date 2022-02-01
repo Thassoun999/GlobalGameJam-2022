@@ -25,7 +25,7 @@ public class PushPullPuzzleBoxes : Collidable
             {
                 if(!isHeld)
                 {
-                    // Play grab sound
+                    AkSoundEngine.PostEvent("Play_Grab_Box_Player", gameObject);
                 }
                 isHeld = true;
             }

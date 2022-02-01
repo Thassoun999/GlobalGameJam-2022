@@ -19,6 +19,8 @@ public class Weapon : Collidable
     private float lastProjectile;
     private bool projectileBool;
 
+    private bool swingHasHit;
+
     // Animator Controller
     private Animator animController; 
 
@@ -31,6 +33,7 @@ public class Weapon : Collidable
         spriteRenderer = GetComponent<SpriteRenderer>();
         animController = GetComponent<Animator>();
         projectileBool = false;
+        swingHasHit = false;
     }
 
     protected override void Update()
@@ -80,21 +83,30 @@ public class Weapon : Collidable
                 color = 1
             };
 
+            if(!swingHasHit)
+            {
+                AkSoundEngine.PostEvent("Play_Take_Damage_Enemy", gameObject);
+                swingHasHit = true;
+            }
+
             coll.SendMessage("ReceiveDamage", dmg); // Is to be sent to the player / enemy class objects (the method ReceiveDamage needs to be implemented for this to work)
         }
     }
 
     private void Swing()
     {
+        swingHasHit = false;
         animController.SetTrigger("Swing");
         AkSoundEngine.PostEvent("Play_Sword_Player", gameObject);
     }
 
     private void SpecialSwing()
     {
+        swingHasHit = false;
         Debug.Log("Special Swing");
         animController.SetTrigger("Special");
         Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-        
+
+        AkSoundEngine.PostEvent("Play_Sword_Charge_Swing_Player", gameObject);
     }
 }

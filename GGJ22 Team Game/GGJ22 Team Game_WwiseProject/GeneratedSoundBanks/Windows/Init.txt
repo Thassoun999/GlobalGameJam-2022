@@ -1,3 +1,13 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	474960906	Zero_Light	Music			
+	493110594	Zero_Dark	Music			
+	748895195	None	Music			
+	3439594019	Forest_Light	Music			
+	4125089501	Forest_Dark	Music			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

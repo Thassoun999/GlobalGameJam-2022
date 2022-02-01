@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : Mover
 {
@@ -16,6 +17,9 @@ public class Player : Mover
     private Vector3 savedPositionDark;
     public Vector3 sceneStartingPosition;
     public HealthBar healthBar;
+
+    private string musicAreaName;
+    static uint musicID = 0;
 
     // transport logic
     public Vector3 transportVec;
@@ -32,6 +36,12 @@ public class Player : Mover
         savedPositionDark = transform.position + transportVec;
 
         sceneStartingPosition = transform.position;
+
+        Scene scene = SceneManager.GetActiveScene();
+        setPlayerArea(scene.name);
+        if(musicID == 0)
+            musicID = AkSoundEngine.PostEvent("Music", gameObject);
+
     }
 
     private void FixedUpdate()
@@ -66,12 +76,17 @@ public class Player : Mover
                     transform.position = savedPositionDark;
                     inLightWorld = false;
                     darkWorldDamageTimer = 0.0f;
+
+                    AkSoundEngine.SetState("Music", musicAreaName + "_Dark");
+                    AkSoundEngine.PostEvent("Play_Portal_To_Dark_Player", gameObject);
                 }
                 else
                 {
                     savedPositionDark = transform.position;
                     transform.position = savedPositionLight;
                     inLightWorld = true;
+                    AkSoundEngine.SetState("Music", musicAreaName + "_Light");
+                    AkSoundEngine.PostEvent("Play_Portal_To_Light_Player", gameObject);
                 }
 
                 worldSwapTimer = 0.0f;
@@ -99,12 +114,30 @@ public class Player : Mover
 
     }
 
+    public void setPlayerArea(string area)
+    {
+        if (area == "Area 0")
+        {
+            musicAreaName = "Zero";
+            AkSoundEngine.SetState("Music", "Zero_Light");
+        }
+        else if (area == "Area 1")
+        {
+            musicAreaName = "Forest";
+            AkSoundEngine.SetState("Music", "Forest_Light");
+        }
+        else
+        {
+            musicAreaName = "None";
+            musicID = 0;
+        }
+    }
+
     protected override void Death()
     {
         hitpoint = maxHitpoint;
         transform.position = sceneStartingPosition;
 
     }
-
 
 }

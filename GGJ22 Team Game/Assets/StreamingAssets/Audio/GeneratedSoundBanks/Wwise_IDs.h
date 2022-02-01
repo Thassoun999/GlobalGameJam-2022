@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAY_BOX_DRAG_ENV = 2979191818U;
         static const AkUniqueID PLAY_DEATH_ENEMY = 589308837U;
         static const AkUniqueID PLAY_DOOR_CLOSE_ENV = 820567787U;
@@ -35,18 +36,25 @@ namespace AK
         static const AkUniqueID PLAY_TAKE_DAMAGE_ENEMY = 343234584U;
         static const AkUniqueID PLAY_TAKE_DAMAGE_PLAYER = 3411544435U;
         static const AkUniqueID STOP_BOX_DRAG_ENV = 326667744U;
-        static const AkUniqueID ZERO_THEME = 2227011225U;
     } // namespace EVENTS
 
-    namespace GAME_PARAMETERS
+    namespace STATES
     {
-        static const AkUniqueID BOX_DRAG = 4102969033U;
-    } // namespace GAME_PARAMETERS
+        namespace MUSIC
+        {
+            static const AkUniqueID GROUP = 3991942870U;
 
-    namespace TRIGGERS
-    {
-        static const AkUniqueID BOX_DRAG_START = 1123465360U;
-    } // namespace TRIGGERS
+            namespace STATE
+            {
+                static const AkUniqueID FOREST_DARK = 4125089501U;
+                static const AkUniqueID FOREST_LIGHT = 3439594019U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID ZERO_DARK = 493110594U;
+                static const AkUniqueID ZERO_LIGHT = 474960906U;
+            } // namespace STATE
+        } // namespace MUSIC
+
+    } // namespace STATES
 
     namespace BANKS
     {

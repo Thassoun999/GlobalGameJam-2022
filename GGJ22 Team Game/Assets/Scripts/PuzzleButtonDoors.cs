@@ -34,6 +34,7 @@ public class PuzzleButtonDoors : Collidable
             if(Input.GetKeyDown(KeyCode.R))
             {
                 pressed = !pressed;
+                AkSoundEngine.PostEvent("Play_Switch_Flip_Env", gameObject);
             }
         }
         

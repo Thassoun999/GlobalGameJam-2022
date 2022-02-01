@@ -13,6 +13,9 @@ public class Portal : Collidable
             // GameManager.instance.SaveState();
             string sceneName = sceneNames[sceneNumber];
             UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+
+            GameManager.instance.player.setPlayerArea(sceneName);
+            Debug.Log("Scene to: " + sceneName);
         }
 
     }

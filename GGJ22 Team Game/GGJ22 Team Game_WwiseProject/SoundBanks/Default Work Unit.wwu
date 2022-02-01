@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Music" ID="{67E32F1E-736F-4B05-B46C-B18657AF3A38}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Zero_Theme" ID="{36E9CC22-D758-4D9F-B186-85F2D7BA9A9F}" WorkUnitID="{9E477915-4CC7-4515-AB66-5017A79F3F72}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music Switch" ID="{B25E9465-02CE-4A50-A347-F24648FD9325}" WorkUnitID="{B90DF190-4461-4FC2-8411-6E444645ADF5}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

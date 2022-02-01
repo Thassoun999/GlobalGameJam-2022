@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="406817756" Language="SFX" Hash="708078985">
+		<SoundBank Id="406817756" Language="SFX" Hash="2202798617">
 			<ObjectPath>\SoundBanks\Default Work Unit\EnemySfx</ObjectPath>
 			<ShortName>EnemySfx</ShortName>
 			<Path>EnemySfx.bnk</Path>
@@ -114,12 +114,12 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2746513014">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3017090543">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1794843847" Language="SFX" Hash="159412100">
+		<SoundBank Id="1794843847" Language="SFX" Hash="3957383907">
 			<ObjectPath>\SoundBanks\Default Work Unit\EnvSfx</ObjectPath>
 			<ShortName>EnvSfx</ShortName>
 			<Path>EnvSfx.bnk</Path>
@@ -179,26 +179,44 @@
 				<Event Id="326667744" Name="Stop_Box_Drag_Env" ObjectPath="\Events\Default Work Unit\EnvSfx\Stop_Box_Drag_Env" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="3456137280">
+		<SoundBank Id="3991942870" Language="SFX" Hash="2815077785">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2227011225" Name="Zero_Theme" ObjectPath="\Events\Music\Zero_Theme" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="284669045" Language="SFX">
-							<ShortName>music-loop-01-head.wav</ShortName>
-							<Path>SFX\music-loop-01-head_D79FB2B7.wem</Path>
-						</File>
-						<File Id="1001286801" Language="SFX">
-							<ShortName>music-loop-01-mainloop.wav</ShortName>
-							<Path>SFX\music-loop-01-mainloop_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Music\Music" DurationType="Infinite"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="48897453" Language="SFX">
+					<ShortName>ggj22-risingtension.wav</ShortName>
+					<Path>SFX\ggj22-risingtension_D79FB2B7.wem</Path>
+				</File>
+				<File Id="168320748" Language="SFX">
+					<ShortName>ggj22-darkness.wav</ShortName>
+					<Path>SFX\ggj22-darkness_D79FB2B7.wem</Path>
+				</File>
+				<File Id="501845554" Language="SFX">
+					<ShortName>zerolight.wav</ShortName>
+					<Path>SFX\zerolight_D79FB2B7.wem</Path>
+				</File>
+				<File Id="926936736" Language="SFX">
+					<ShortName>zerodark.wav</ShortName>
+					<Path>SFX\zerodark_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+			<StateGroups>
+				<StateGroup Id="3991942870" Name="Music" ObjectPath="\States\Default Work Unit\Music" GUID="{A23ADDD9-C63F-4B11-AFF3-72F3335DE88A}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music\None" GUID="{9150EA3C-6BE3-44DA-B614-169BD994A992}"/>
+						<State Id="474960906" Name="Zero_Light" ObjectPath="\States\Default Work Unit\Music\Zero_Light" GUID="{AE30F8AC-BFD6-45FD-8A28-A6CFA9A3CB2C}"/>
+						<State Id="493110594" Name="Zero_Dark" ObjectPath="\States\Default Work Unit\Music\Zero_Dark" GUID="{F0D9FA8D-F74E-48D7-8A5F-036CD6C0073F}"/>
+						<State Id="3439594019" Name="Forest_Light" ObjectPath="\States\Default Work Unit\Music\Forest_Light" GUID="{4759A723-FA83-478E-9FE9-1E3B306BE205}"/>
+						<State Id="4125089501" Name="Forest_Dark" ObjectPath="\States\Default Work Unit\Music\Forest_Dark" GUID="{C8E95190-ED57-4F4D-A980-5C35373970CA}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4283257371" Language="SFX" Hash="3545322923">
+		<SoundBank Id="4283257371" Language="SFX" Hash="2365429848">
 			<ObjectPath>\SoundBanks\Default Work Unit\PlayerSfx</ObjectPath>
 			<ShortName>PlayerSfx</ShortName>
 			<Path>PlayerSfx.bnk</Path>

@@ -51,4 +51,12 @@ public class PuzzleSwitchDoors : Collidable
             doorGroup.SetActive(true);
         }
     }
+
+    private void OnCollisionEnter(Collision coll)
+    {
+        if(coll.collider.name == "Player" || coll.collider.tag == "PuzzleCrate")
+        {
+            AkSoundEngine.PostEvent("Play_Switch_Flip_Env", gameObject);
+        }
+    }
 }
