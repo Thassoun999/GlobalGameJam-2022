@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: e3a874ba47187443bb51ee4b03d8792a
     GuidInternal: 
-    m_lastTime: -8585580300544775808
+    m_lastTime: -8585578662896918476
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: cd9434ea98afba4bb58f7f868659e896
     GuidInternal: 
-    m_lastTime: -8585580300544775808
+    m_lastTime: -8585578662949876876
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 02b2083cbba1a040baabe1dd025d00aa
     GuidInternal: 
-    m_lastTime: -8585580291083042278
+    m_lastTime: -8585578662896958345
     List:
     - name: EnemySfx
       guid: 70442690d0721143af3f8f74f57e3ccc
@@ -136,7 +136,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: b1e279512870f84fb33171e05b9ca636
     GuidInternal: 
-    m_lastTime: -8585580300544775808
+    m_lastTime: -8585578662987416497
     List:
     - name: EnemySfx
       guid: 7ecdc17378cb954891d14bdaba838563
@@ -640,11 +640,11 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: 1579479ec74c1545ab665017a79f3f72
     GuidInternal: 
-    m_lastTime: -8585580291093305358
+    m_lastTime: -8585578662987406513
     List:
-    - name: Zero_Theme
-      guid: 22cce93658d79f4db18685f2d7ba9a9f
-      id: 2227011225
+    - name: Music
+      guid: f1a3b965e0e01b41acbad69676cbee9b
+      id: 3991942870
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -652,10 +652,10 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 12
         guid: 1579479ec74c1545ab665017a79f3f72
-      - ElementName: Zero_Theme
+      - ElementName: Music
         ObjectType: 3
-        guid: 22cce93658d79f4db18685f2d7ba9a9f
-      Path: Events\Music\Zero_Theme
+        guid: f1a3b965e0e01b41acbad69676cbee9b
+      Path: Events\Music\Music
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -671,7 +671,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 56b1788ab85b9f4590facde5337522dc
     GuidInternal: 
-    m_lastTime: -8585580300544775808
+    m_lastTime: -8585578662987306795
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -685,8 +685,106 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 1837a4d01c783940b46b12d9bdb2a91e
     GuidInternal: 
-    m_lastTime: -8585580291083022331
-    List: []
+    m_lastTime: -8585578662896938393
+    List:
+    - name: Music
+      guid: d9dd3aa23fc6114baff372f3335de88a
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1837a4d01c783940b46b12d9bdb2a91e
+      - ElementName: Music
+        ObjectType: 9
+        guid: d9dd3aa23fc6114baff372f3335de88a
+      Path: States\Default Work Unit\Music
+      values:
+      - name: Forest_Dark
+        guid: 9051e9c857ed4d4fa9805c35373970ca
+        id: 4125089501
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1837a4d01c783940b46b12d9bdb2a91e
+        - ElementName: Music
+          ObjectType: 9
+          guid: d9dd3aa23fc6114baff372f3335de88a
+        - ElementName: Forest_Dark
+          ObjectType: 8
+          guid: 9051e9c857ed4d4fa9805c35373970ca
+      - name: Forest_Light
+        guid: 23a7594783fa8e479fe91e3b306be205
+        id: 3439594019
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1837a4d01c783940b46b12d9bdb2a91e
+        - ElementName: Music
+          ObjectType: 9
+          guid: d9dd3aa23fc6114baff372f3335de88a
+        - ElementName: Forest_Light
+          ObjectType: 8
+          guid: 23a7594783fa8e479fe91e3b306be205
+      - name: None
+        guid: 3cea5091e36bda44b614169bd994a992
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1837a4d01c783940b46b12d9bdb2a91e
+        - ElementName: Music
+          ObjectType: 9
+          guid: d9dd3aa23fc6114baff372f3335de88a
+        - ElementName: None
+          ObjectType: 8
+          guid: 3cea5091e36bda44b614169bd994a992
+      - name: Zero_Dark
+        guid: 8dfad9f04ef7d7488a5f036cd6c0073f
+        id: 493110594
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1837a4d01c783940b46b12d9bdb2a91e
+        - ElementName: Music
+          ObjectType: 9
+          guid: d9dd3aa23fc6114baff372f3335de88a
+        - ElementName: Zero_Dark
+          ObjectType: 8
+          guid: 8dfad9f04ef7d7488a5f036cd6c0073f
+      - name: Zero_Light
+        guid: acf830aed6bffd458a28a6cfa9a3cb2c
+        id: 474960906
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1837a4d01c783940b46b12d9bdb2a91e
+        - ElementName: Music
+          ObjectType: 9
+          guid: d9dd3aa23fc6114baff372f3335de88a
+        - ElementName: Zero_Light
+          ObjectType: 8
+          guid: acf830aed6bffd458a28a6cfa9a3cb2c
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -699,7 +797,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 9ec52069e7f8f94ab7c5c10de0aa5cd7
     GuidInternal: 
-    m_lastTime: -8585580300544775808
+    m_lastTime: -8585578662896928432
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -713,10 +811,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 17075a0b101c3b4a8a7c2330252bd06d
     GuidInternal: 
-    m_lastTime: -8585580300544775808
+    m_lastTime: -8585578662896928432
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000600000007000000080000000b0000000d0000000e0000000f00000010000000110000001a000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
