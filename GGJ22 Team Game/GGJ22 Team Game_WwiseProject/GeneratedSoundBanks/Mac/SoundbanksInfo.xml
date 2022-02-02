@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="406817756" Language="SFX" Hash="2202798617">
+		<SoundBank Id="406817756" Language="SFX" Hash="1389308378">
 			<ObjectPath>\SoundBanks\Default Work Unit\EnemySfx</ObjectPath>
 			<ShortName>EnemySfx</ShortName>
 			<Path>EnemySfx.bnk</Path>
@@ -119,7 +119,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1794843847" Language="SFX" Hash="3957383907">
+		<SoundBank Id="1794843847" Language="SFX" Hash="2350630389">
 			<ObjectPath>\SoundBanks\Default Work Unit\EnvSfx</ObjectPath>
 			<ShortName>EnvSfx</ShortName>
 			<Path>EnvSfx.bnk</Path>
@@ -179,7 +179,7 @@
 				<Event Id="326667744" Name="Stop_Box_Drag_Env" ObjectPath="\Events\Default Work Unit\EnvSfx\Stop_Box_Drag_Env" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2815077785">
+		<SoundBank Id="3991942870" Language="SFX" Hash="3251078776">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
@@ -216,7 +216,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4283257371" Language="SFX" Hash="2365429848">
+		<SoundBank Id="4283257371" Language="SFX" Hash="3049370799">
 			<ObjectPath>\SoundBanks\Default Work Unit\PlayerSfx</ObjectPath>
 			<ShortName>PlayerSfx</ShortName>
 			<Path>PlayerSfx.bnk</Path>
