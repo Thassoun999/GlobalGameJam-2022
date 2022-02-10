@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1552571629020567055}
   - component: {fileID: 1552571629020567052}
   - component: {fileID: 1552571629020567053}
-  - component: {fileID: 1552571629020567042}
+  - component: {fileID: 1471735667638542482}
   m_Layer: 7
   m_Name: NPC SIGN
   m_TagString: Untagged
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 6510592163439161560, guid: 49d09e73db76cb6478d5136c0d308cd9, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7765965, g: 0.9811321, b: 0.754361, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -130,7 +130,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1552571629020567042
+--- !u!114 &1471735667638542482
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1552571629020567040}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c585ae0dacf38964d833a38cb2bb6971, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ab4b7cfa21449c40a4f196577d3faa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   filter:
@@ -156,3 +156,4 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
+  dialogueNPC: []

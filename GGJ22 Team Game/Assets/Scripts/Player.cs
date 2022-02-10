@@ -17,6 +17,7 @@ public class Player : Mover
     private Vector3 savedPositionDark;
     public Vector3 sceneStartingPosition;
     public HealthBar healthBar;
+    public bool inCoversation;
 
     private string musicAreaName;
     static uint musicID = 0;
@@ -32,6 +33,7 @@ public class Player : Mover
         worldSwapTimer = 0.0f;
         darkWorldDamageTimer = 0.0f;
         inLightWorld = true;
+        inCoversation = false;
         savedPositionLight = transform.position;
         savedPositionDark = transform.position + transportVec;
 
@@ -46,19 +48,21 @@ public class Player : Mover
 
     private void FixedUpdate()
     {
-        float x = Input.GetAxisRaw("Horizontal"); // idle = 0, right = 1, left = -1
-        float y = Input.GetAxisRaw("Vertical"); // idle = 0, up = 1, down = -1
+        if (!inCoversation){
+            float x = Input.GetAxisRaw("Horizontal"); // idle = 0, right = 1, left = -1
+            float y = Input.GetAxisRaw("Vertical"); // idle = 0, up = 1, down = -1
 
-        if (x == -1)
-        {
-            directionFacing = -1;
-        }
-        else if (x == 1)
-        {
-            directionFacing = 1;
-        }
+            if (x == -1)
+            {
+                directionFacing = -1;
+            }
+            else if (x == 1)
+            {
+                directionFacing = 1;
+            }
 
-        UpdateMotor(new Vector3(x, y, 0));
+            UpdateMotor(new Vector3(x, y, 0));
+        }
     }
 
     private void Update()
@@ -68,28 +72,30 @@ public class Player : Mover
 
         if(worldSwapTimer > 3.0f)
         {
-            if(Input.GetKeyDown(KeyCode.Q))
-            {
-                if(inLightWorld)
+            if(!inCoversation){
+                if(Input.GetKeyDown(KeyCode.Q))
                 {
-                    savedPositionLight = transform.position;
-                    transform.position = savedPositionDark;
-                    inLightWorld = false;
-                    darkWorldDamageTimer = 0.0f;
+                    if(inLightWorld)
+                    {
+                        savedPositionLight = transform.position;
+                        transform.position = savedPositionDark;
+                        inLightWorld = false;
+                        darkWorldDamageTimer = 0.0f;
 
-                    AkSoundEngine.SetState("Music", musicAreaName + "_Dark");
-                    AkSoundEngine.PostEvent("Play_Portal_To_Dark_Player", gameObject);
-                }
-                else
-                {
-                    savedPositionDark = transform.position;
-                    transform.position = savedPositionLight;
-                    inLightWorld = true;
-                    AkSoundEngine.SetState("Music", musicAreaName + "_Light");
-                    AkSoundEngine.PostEvent("Play_Portal_To_Light_Player", gameObject);
-                }
+                        AkSoundEngine.SetState("Music", musicAreaName + "_Dark");
+                        AkSoundEngine.PostEvent("Play_Portal_To_Dark_Player", gameObject);
+                    }
+                    else
+                    {
+                        savedPositionDark = transform.position;
+                        transform.position = savedPositionLight;
+                        inLightWorld = true;
+                        AkSoundEngine.SetState("Music", musicAreaName + "_Light");
+                        AkSoundEngine.PostEvent("Play_Portal_To_Light_Player", gameObject);
+                    }
 
-                worldSwapTimer = 0.0f;
+                    worldSwapTimer = 0.0f;
+                }
             }
         }
 
