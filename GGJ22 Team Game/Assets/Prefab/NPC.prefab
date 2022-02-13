@@ -30,7 +30,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.18473633, y: -0.3874736, z: 0.66737294}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2093943415549792180}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -142,6 +143,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7686eb05193634a84d551875036003, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueNPCPre:
+  - A rift has been torn between worlds! Go WEST and find a way to heal the tear!
+  dialogueNPCPost:
+  - You have it! Good! Now go to the rift and restore balance!
+  dialogueManager: {fileID: 0}
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -156,7 +162,77 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  dialogueNPCPre:
-  - A rift has been torn between worlds! Go WEST and find a way to heal the tear!
-  dialogueNPCPost:
-  - You have it! Good! Now go to the rift and restore balance!
+--- !u!1001 &1381115996583504847
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5215997006195734532}
+    m_Modifications:
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.086
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.111
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.66737294
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642928521160470953, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_Name
+      value: pixelchat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185898292006478539, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185898292006478539, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185898292006478539, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2086918445
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+--- !u!4 &2093943415549792180 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+  m_PrefabInstance: {fileID: 1381115996583504847}
+  m_PrefabAsset: {fileID: 0}

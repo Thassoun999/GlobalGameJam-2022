@@ -5387,6 +5387,10 @@ PrefabInstance:
       value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 7020951365443596432, guid: 0fa026701c5809a46bb8b23d0063833e, type: 3}
+      propertyPath: prefabUI
+      value: 
+      objectReference: {fileID: 17712822863003113, guid: 177f860537f2b564abd89e23a80e3594, type: 3}
+    - target: {fileID: 7020951365443596432, guid: 0fa026701c5809a46bb8b23d0063833e, type: 3}
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 1020203950}
@@ -5395,8 +5399,13 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7020951365443596432, guid: 0fa026701c5809a46bb8b23d0063833e, type: 3}
+      propertyPath: dialogueNPCPre.Array.data[0]
+      value: A rift has been torn between worlds! Go WEST and find the relic to heal
+        the tear!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7020951365443596432, guid: 0fa026701c5809a46bb8b23d0063833e, type: 3}
       propertyPath: dialogueNPCPre.Array.data[1]
-      value: Ew, go away!
+      value: Once you have it, bring it back here!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fa026701c5809a46bb8b23d0063833e, type: 3}

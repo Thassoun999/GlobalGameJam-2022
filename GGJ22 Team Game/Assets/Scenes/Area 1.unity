@@ -1721,6 +1721,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 207946205}
     m_Modifications:
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 688912144}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[0]
+      value: Press SPACE to swing your sword against enemies and plants!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[1]
+      value: When your sword glows <RED>, hit SPACE to do a Special Attack!
+      objectReference: {fileID: 0}
     - target: {fileID: 1552571629020567040, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
       propertyPath: m_Name
       value: NPC SIGN (1)
@@ -2168,6 +2184,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 207946205}
     m_Modifications:
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 688912144}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[0]
+      value: You'll need to cross worlds to solve the puzzles here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[1]
+      value: Press Q to cross the rift, after a short time you can cross back with
+        Q.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[2]
+      value: Be warned, it's not healthy to stay on the other side.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[3]
+      value: You'll take damage bit by bit, so make sure to come back periodically!
+      objectReference: {fileID: 0}
     - target: {fileID: 1552571629020567040, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
       propertyPath: m_Name
       value: NPC SIGN (2)
@@ -4012,10 +4053,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3849275760394067410, guid: e2e3694e3dd36e54cb8aaf8c0d16450b, type: 3}
-      propertyPath: m_RenderMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3849275760394067411, guid: e2e3694e3dd36e54cb8aaf8c0d16450b, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
@@ -4047,6 +4084,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a9dfaffd1d681243a6b4c21dbf4c70d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &688912144 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7757204730893250469, guid: e2e3694e3dd36e54cb8aaf8c0d16450b, type: 3}
+  m_PrefabInstance: {fileID: 688912142}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364d0b9987f597f4aa7251eaf6eac129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &709485226 stripped
@@ -4127,6 +4175,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 207946205}
     m_Modifications:
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 688912144}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[0]
+      value: Everything you kill crosses to the other side...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[1]
+      value: This applies to this flower, its spirit will cross over and become stronger!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[2]
+      value: Collect it to heal to full HP!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[3]
+      value: The same concept also applies to the enemies you kill.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[4]
+      value: They will also come back stronger on the other side...
+      objectReference: {fileID: 0}
     - target: {fileID: 1552571629020567040, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
       propertyPath: m_Name
       value: NPC SIGN (3)
@@ -4799,6 +4875,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 207946205}
     m_Modifications:
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 688912144}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[0]
+      value: Symbols like these are important to remember!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[1]
+      value: They can be used for certain puzzles both here and on the other side.
+      objectReference: {fileID: 0}
     - target: {fileID: 1552571629020567040, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
       propertyPath: m_Name
       value: NPC SIGN (4)
@@ -4864,6 +4956,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 207946205}
     m_Modifications:
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 688912144}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[0]
+      value: This door can't be opened on this side.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[1]
+      value: There IS a symbol north of here that can help to open it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[2]
+      value: The symbol serves a clue to something on the other side.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[3]
+      value: Might be a good idea to do some exploring!
+      objectReference: {fileID: 0}
     - target: {fileID: 1552571629020567040, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
       propertyPath: m_Name
       value: NPC SIGN (5)
@@ -4929,6 +5045,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1122849961}
     m_Modifications:
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 688912144}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[0]
+      value: This crate over here can be pushed around!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[1]
+      value: You can also hold R to grab the crate to pull it!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[2]
+      value: Anything you are holding can cross sides with you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[3]
+      value: That could DEFINITELY come in handy!
+      objectReference: {fileID: 0}
     - target: {fileID: 1552571629020567040, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
       propertyPath: m_Name
       value: NPC SIGN (6)
@@ -25334,6 +25474,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 643175160}
     m_Modifications:
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 688912144}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[0]
+      value: Press / Hold R to interact with crates and levers!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[1]
+      value: That lever over there should open the door on the left!
+      objectReference: {fileID: 0}
     - target: {fileID: 1552571629020567040, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
       propertyPath: m_Name
       value: NPC SIGN
@@ -25344,11 +25500,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1552571629020567043, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.416
+      value: 0.331
       objectReference: {fileID: 0}
     - target: {fileID: 1552571629020567043, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.41552782
+      value: -0.359
       objectReference: {fileID: 0}
     - target: {fileID: 1552571629020567043, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28869,6 +29025,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 24386356}
     m_Modifications:
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 688912144}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[0]
+      value: Congrats! You made to the end of the area!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[1]
+      value: The key over there can help you seal the rift!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[2]
+      value: ...And that lever over there opens a door all the way at the start!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[3]
+      value: Make sure to take the key, open the door, and head back to the rift!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471735667638542482, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
+      propertyPath: dialogueNPC.Array.data[4]
+      value: Thank you Zai, you'll finally be able to restore balance to the world!
+        ^_^
+      objectReference: {fileID: 0}
     - target: {fileID: 1552571629020567040, guid: 207d4c9f19245c44287ed2b76d6ba11f, type: 3}
       propertyPath: m_Name
       value: NPC SIGN (7)

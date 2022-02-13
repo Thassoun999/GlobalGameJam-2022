@@ -1,9 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class MainAreaNPC : Collidable
+public class MainAreaNPC : MonoBehaviour
 {
+    // Chat icon references
+    private SpriteRenderer iconSprite;
+    private bool collidingPlayer;
+    
+    // Dialogue references
     public string[] dialogueNPCPre;
     public string[] dialogueNPCPost;
 
@@ -12,21 +18,50 @@ public class MainAreaNPC : Collidable
     // This gets updated the more items that our player gets!
     private int progress;
 
-    protected override void Start()
+    public ContactFilter2D filter; // filter for knowing what exactly you should be colliding with
+    private BoxCollider2D boxCollider; // This should just be on the assigned object to detect said collisions
+    private Collider2D[] hits = new Collider2D[10]; // Array containing data of what exactly did you hit during this frame
+
+   private void Start()
     {
-        base.Start();
+        boxCollider = GetComponent<BoxCollider2D>();
         progress = GameManager2.instance.numArtifacts;
+        iconSprite = transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>();
+        iconSprite.enabled = false;
+        collidingPlayer = false;
+        
     }
 
-       protected override void Update()
+    private void Update()
     {
-        base.Update();
+        collidingPlayer = false;
+        // Collision work
+        boxCollider.OverlapCollider(filter, hits); // Get a list of results that overlap this collider (looking for other colliders beneath or above it)
+        for (int i = 0; i < hits.Length; i++)
+        {
+            // we hit nothing
+            if(hits[i] == null)
+                continue;
+
+            OnCollide(hits[i]);
+
+            // The array is not cleaned up every time so we have to go ahead and do it ourselves
+            hits[i] = null;
+        }
+
+        if (collidingPlayer)
+            iconSprite.enabled = true;
+        else   
+            iconSprite.enabled = false;
+
     }
 
-     protected override void OnCollide(Collider2D coll)
+    private void OnCollide(Collider2D coll)
     {
         if(coll.name == "Player")
         {
+            collidingPlayer = true;
+            iconSprite.enabled = true;
             if(progress == 0)
             {
                 if(!GameManager.instance.player.inCoversation && Input.GetKeyDown(KeyCode.R))
