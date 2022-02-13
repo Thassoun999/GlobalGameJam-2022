@@ -100,13 +100,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitpoint: 10
   maxHitpoint: 10
-  pushRecoveryspeed: 0.1
+  pushRecoveryspeed: 0.2
   directionFacing: 0
   holdingCrate: 0
   sceneStartingPosition: {x: 0, y: 0, z: 0}
   healthBar: {fileID: 3330762821592335893, guid: 109a7f8f7a14cf54cb6c0f7466b0bce0, type: 3}
   inCoversation: 0
   transportVec: {x: 0, y: 0, z: 0}
+  dying: 0
 --- !u!61 &1684633112428568358
 BoxCollider2D:
   m_ObjectHideFlags: 0

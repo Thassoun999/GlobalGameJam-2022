@@ -57,7 +57,9 @@ public abstract class Mover : Fighter
             }
             else if (playerSfxTimeDelta > playerSfxWait)
             {
-                playerSfxTimeDelta = 0.0f;
+                // @Nayven this needs to not be here, have this reset in the if statement above
+                // Should be changed in another PR
+                playerSfxTimeDelta = 0.0f; 
             }
             else
             {

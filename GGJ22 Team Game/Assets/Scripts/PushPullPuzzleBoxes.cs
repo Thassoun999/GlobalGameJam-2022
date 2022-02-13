@@ -35,6 +35,8 @@ public class PushPullPuzzleBoxes : Collidable
             }
         }
 
+        // Player shouldn't be holding on to crate when "dying" (AKA getting teleported to start)
+        // Crate should drop where it is! -> See Death() function in Player.cs -> Currently leaving this bug to be solved for later!
         if (isHeld)
         {
             GameManager.instance.player.holdingCrate = true;

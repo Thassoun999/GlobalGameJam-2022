@@ -5,8 +5,24 @@ using UnityEngine;
 public class LargeEnemyHitbox : Collidable
 {
     // Damage
-    public int damagePoint = 2;
-    public float pushForce = 4.0f;
+    public int damagePoint;
+    public float pushForce;
+
+    // player being hit sfx
+    private float playerSfxTimeDelta;
+    private float playerSfxWait = 1.0f;
+
+    protected override void Start()
+    {
+        base.Start();
+        playerSfxTimeDelta = 0.0f;
+    }
+
+    protected override void Update()
+    {
+        base.Update();
+        playerSfxTimeDelta += Time.deltaTime;
+    }
 
     protected override void OnCollide(Collider2D coll)
     {
@@ -20,7 +36,12 @@ public class LargeEnemyHitbox : Collidable
                 pushForce = pushForce,
                 color = 0
             };
-            AkSoundEngine.PostEvent("Play_Take_Damage_Player", gameObject);
+            
+            // TEMP Fix! See if Akwise has a "don't play this sound again until first instance finishes" thing
+            if (playerSfxTimeDelta > playerSfxWait){
+                AkSoundEngine.PostEvent("Play_Take_Damage_Player", gameObject); 
+                playerSfxTimeDelta = 0.0f;
+            }
             coll.SendMessage("ReceiveDamage", dmg, 0); // Is to be sent to the player / enemy class objects (the method ReceiveDamage needs to be implemented for this to work)
         }
     }
