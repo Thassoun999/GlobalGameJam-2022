@@ -43,6 +43,7 @@ public class Fighter : MonoBehaviour
         }
     }
 
+    // for the future, make this abstract!!
     protected virtual void Death()
     {
 

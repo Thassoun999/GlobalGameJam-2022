@@ -5,8 +5,8 @@ using UnityEngine;
 public class Weapon : Collidable
 {
     // Damage struct
-    public int damagePoint = 2;
-    public float pushForce = 2.0f;
+    public int damagePoint;
+    public float pushForce;
 
     // Weapon upgrade
     public int weaponLevel = 0;

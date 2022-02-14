@@ -2,40 +2,66 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : Collidable
+public class NPC : MonoBehaviour
 {
-    private string[] dialogueNPC = new string[3];
+// Chat icon references
+    private SpriteRenderer iconSprite;
+    private bool collidingPlayer;
+    
+    // Dialogue references
+    public string[] dialogueNPC;
 
-    // This gets updated the more items that our player gets!
-    private int progress;
+    public Dialogue dialogueManager;
 
-    // Message buffer
-    private float messageTimer;
+    public ContactFilter2D filter; // filter for knowing what exactly you should be colliding with
+    private BoxCollider2D boxCollider; // This should just be on the assigned object to detect said collisions
+    private Collider2D[] hits = new Collider2D[10]; // Array containing data of what exactly did you hit during this frame
 
-    protected override void Start()
+    private void Start()
     {
-        base.Start();
-        messageTimer = 7.0f;
-        progress = GameManager2.instance.numArtifacts;
-        dialogueNPC[0] = "A rift has been torn between worlds! Go WEST and find a way to heal the tear!";
-        // dialogueNPC[1] = "What you have will help you survive the poisonous swamp to the EAST!! The artifact to close the rift is there!";
-        dialogueNPC[1] = "You have it! Good! Now go to the rift and restore balance! But BEWARE of what may stop you!!!";
+        boxCollider = GetComponent<BoxCollider2D>();
+        iconSprite = transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>();
+        iconSprite.enabled = false;
+        collidingPlayer = false;
+        
     }
 
-    protected override void Update()
+    private void Update()
     {
-        base.Update();
-        messageTimer += Time.deltaTime;
+        collidingPlayer = false;
+        // Collision work
+        boxCollider.OverlapCollider(filter, hits); // Get a list of results that overlap this collider (looking for other colliders beneath or above it)
+        for (int i = 0; i < hits.Length; i++)
+        {
+            // we hit nothing
+            if(hits[i] == null)
+                continue;
+
+            OnCollide(hits[i]);
+
+            // The array is not cleaned up every time so we have to go ahead and do it ourselves
+            hits[i] = null;
+        }
+
+        if (collidingPlayer)
+            iconSprite.enabled = true;
+        else   
+            iconSprite.enabled = false;
+
     }
 
-    protected override void OnCollide(Collider2D coll)
+    private void OnCollide(Collider2D coll)
     {
         if(coll.name == "Player")
         {
-            if(messageTimer > 7.0f)
+            collidingPlayer = true;
+            iconSprite.enabled = true;
+            if(!GameManager.instance.player.inCoversation && Input.GetKeyDown(KeyCode.R))
             {
-                messageTimer = 0.0f;
-                GameManager.instance.ShowText(dialogueNPC[progress], 35, Color.white, transform.position + (new Vector3(0.0f, 0.2f, 0.0f)), Vector3.zero, 6.5f, 0);
+                // We don't do this anymore!!!! NPCs now use the dialogue system box and each NPC will have a list of dialogue statements!
+                //GameManager.instance.ShowText(dialogueNPC[progress], 35, Color.white, transform.position + (new Vector3(0.0f, 0.2f, 0.0f)), Vector3.zero, 6.5f, 0);
+                dialogueManager.sentences = dialogueNPC;
+                dialogueManager.StartTaling();
             }
         }
     }

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5215997006195734532}
   - component: {fileID: 5215997006195734555}
   - component: {fileID: 5215997006195734554}
-  - component: {fileID: 5215997006195734533}
   - component: {fileID: 5215997006195734534}
+  - component: {fileID: 7020951365443596432}
   m_Layer: 7
   m_Name: NPC
   m_TagString: Untagged
@@ -30,7 +30,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.18473633, y: -0.3874736, z: 0.66737294}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2093943415549792180}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -111,32 +112,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.103425056, y: 0.12902755}
   m_EdgeRadius: 0
---- !u!114 &5215997006195734533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5215997006195734553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ab4b7cfa21449c40a4f196577d3faa4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  filter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
 --- !u!95 &5215997006195734534
 Animator:
   serializedVersion: 3
@@ -156,3 +131,108 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7020951365443596432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5215997006195734553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7686eb05193634a84d551875036003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueNPCPre:
+  - A rift has been torn between worlds! Go WEST and find a way to heal the tear!
+  dialogueNPCPost:
+  - You have it! Good! Now go to the rift and restore balance!
+  dialogueManager: {fileID: 0}
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+--- !u!1001 &1381115996583504847
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5215997006195734532}
+    m_Modifications:
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.086
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.111
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.66737294
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4642928521160470953, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_Name
+      value: pixelchat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185898292006478539, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185898292006478539, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185898292006478539, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2086918445
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+--- !u!4 &2093943415549792180 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1019392273930331259, guid: 0ece16f32cc107c4a84add2568814c3a, type: 3}
+  m_PrefabInstance: {fileID: 1381115996583504847}
+  m_PrefabAsset: {fileID: 0}

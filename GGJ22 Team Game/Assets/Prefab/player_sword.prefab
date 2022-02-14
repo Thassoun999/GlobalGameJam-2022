@@ -138,7 +138,7 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   damagePoint: 1
-  pushForce: 4
+  pushForce: 12
   weaponLevel: 0
   projectilePrefab: {fileID: 2275273557051965834, guid: abae6283d5e2cd9458412010422bf119, type: 3}
 --- !u!95 &5435024489313457926
