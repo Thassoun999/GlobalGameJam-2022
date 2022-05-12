@@ -5740,6 +5740,7 @@ GameObject:
   - component: {fileID: 1831317808}
   - component: {fileID: 1831317807}
   - component: {fileID: 1831317810}
+  - component: {fileID: 1831317811}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5827,6 +5828,22 @@ MonoBehaviour:
   lookAt: {fileID: 1729857560}
   boundX: 0.3
   boundY: 0.15
+--- !u!114 &1831317811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831317806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7527326c1dadd7a43bec076f6ecb0a80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueNPC:
+  - Game will restart in 10 seconds. Press [ESC] again to restart now, or [ENTER]
+    to cancel.
+  dialogueManager: {fileID: 1020203950}
 --- !u!4 &2002963791 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4842824473445000187, guid: 908dac608bbe68f46b08038ab67af03d, type: 3}

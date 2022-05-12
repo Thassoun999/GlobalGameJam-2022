@@ -17,6 +17,7 @@ public class Dialogue : MonoBehaviour
     public GameObject continueButton;
     public GameObject textBox;
 
+    private bool abortAnimation = false;
 
     public void StartTaling()
     {
@@ -57,6 +58,11 @@ public class Dialogue : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Return))
                     NextSentence();
             }
+
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                abortAnimation = true;
+            }
         }
     }
 
@@ -71,7 +77,20 @@ public class Dialogue : MonoBehaviour
             // TYPING SOUND HERE
 
             textDisplay.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            // SUPER HACKY STOP THE CODE IMMEDIATELY STUFF (for demo's "reset" feature)
+            if(abortAnimation)
+            {
+                abortAnimation = false;
+                sentences = new string[] { };
+                textDisplay.text = "";
+                GameManager.instance.player.inCoversation = false;
+                textBox.SetActive(false);
+                break;
+            }
+            else
+            {
+                yield return new WaitForSeconds(typingSpeed);
+            }
         }
     }
 

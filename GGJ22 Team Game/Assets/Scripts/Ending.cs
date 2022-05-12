@@ -61,9 +61,13 @@ public class Ending : Collidable
             curtainText.color = tempb;
         }
 
-        if(totalTimer > 10.0f)
+        if(totalTimer > 10.0f || Input.GetKeyDown(KeyCode.Escape))
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Area 2");
+            //UnityEngine.SceneManagement.SceneManager.LoadScene("Area 2");
+            // Demo Reset
+            endCondition = false;
+            GameManager2.instance.numArtifacts = 0;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         }
 
     }
