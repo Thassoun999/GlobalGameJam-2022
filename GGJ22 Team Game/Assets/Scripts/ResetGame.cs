@@ -48,7 +48,7 @@ public class ResetGame : MonoBehaviour
         {
             // Escape pressed while reset dialog already open
             // or the timer expired for auto-restart
-            if (autoCounter >= autoTimeout || (!keyHeld && Input.GetKeyDown(KeyCode.Escape)))
+            if (autoCounter >= autoTimeout || (!keyHeld && autoCounter >= 0.6f && Input.GetKeyDown(KeyCode.Escape)))
             {
                 // reset game
                 ResetTheGame();

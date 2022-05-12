@@ -7,6 +7,9 @@ public class Dialogue : MonoBehaviour
     // Reference to dialogue box
     public TextMeshProUGUI textDisplay;
 
+    private bool escHeld = false; // a lame attempt at not allowing the restart dialog to disappear immediately after pressing esc.
+    private float escTimer = 0.0f; // delay when esc can be pressed again to kill the dialog
+
     // index to cycle through array of sentences
     public string[] sentences;
     private int index;
@@ -59,8 +62,18 @@ public class Dialogue : MonoBehaviour
                     NextSentence();
             }
 
-            if(Input.GetKeyDown(KeyCode.Escape))
+            if(escHeld)
             {
+                escTimer += Time.deltaTime;
+                if (escTimer > 1.0f)
+                {
+                    escHeld = false;
+                    escTimer = 0.0f;
+                }
+            }
+            if(Input.GetKeyDown(KeyCode.Escape) && !escHeld)
+            {
+                escHeld = true;
                 abortAnimation = true;
             }
         }
